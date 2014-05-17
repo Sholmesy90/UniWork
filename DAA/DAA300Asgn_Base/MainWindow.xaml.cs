@@ -43,7 +43,7 @@ namespace Asgn
                if ((c >= '0') && (c <= '9'))
                    number = (int)c + 5;
                else if ((c >= 'a') && (c <= 'z'))
-                   number = (int)c - 96;
+                   number = (int)c - 70;
                else if ((c >= 'A') && (c <= 'Z'))
                    number = (int)c - 64;
                else if (c == '\n')
@@ -68,7 +68,7 @@ namespace Asgn
                     else if ((i >= 1) && (i <= 26))
                         finalString += (char)(i + 64) + " : ";
                     else if ((i >= 27) && (i <= 52))
-                        finalString += (char)(i + 96) + " : ";
+                        finalString += (char)(i + 70) + " : ";
                     else if ((i >= 53) && (i <= 62))
                         finalString += (char)(i - 5) + " : ";
                     else
@@ -76,7 +76,7 @@ namespace Asgn
                     finalString += array[i] + "\n";
                 }
             }
-            Console.WriteLine(finalString);
+            txtFreqTbl.Text = finalString;
         }
     }
 }

@@ -49,3 +49,15 @@ C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn.Pro
 C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn.csproj.GenerateResource.Cache
 C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\bin\Debug\Asgn.exe
 C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\bin\Debug\Asgn.pdb
+C:\Users\Sholmes Mcgee\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn.exe
+C:\Users\Sholmes Mcgee\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn.pdb
+C:\Users\Sholmes Mcgee\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\bin\Debug\Asgn.exe
+C:\Users\Sholmes Mcgee\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\bin\Debug\Asgn.pdb
+C:\Users\Sholmes Mcgee\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn.csprojResolveAssemblyReference.cache
+C:\Users\Sholmes Mcgee\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\MainWindow.baml
+C:\Users\Sholmes Mcgee\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Sholmes Mcgee\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\App.g.cs
+C:\Users\Sholmes Mcgee\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn_MarkupCompile.cache
+C:\Users\Sholmes Mcgee\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn.g.resources
+C:\Users\Sholmes Mcgee\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn.Properties.Resources.resources
+C:\Users\Sholmes Mcgee\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn.csproj.GenerateResource.Cache
