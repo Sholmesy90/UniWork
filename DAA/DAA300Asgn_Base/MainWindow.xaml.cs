@@ -39,7 +39,7 @@ namespace Asgn
                int number = 0;
 
                char c = charArray[i];
-
+        
                if ((c >= '0') && (c <= '9'))
                    number = (int)c + 5;
                else if ((c >= 'a') && (c <= 'z'))
@@ -63,16 +63,33 @@ namespace Asgn
             {
                 if (array[i] != 0)
                 {
+                    Node newNode = new Node();
                     if (i == 0)
+                    {
                         finalString += "space : ";
+                        newNode.SetSymbol(' ');
+                    }
                     else if ((i >= 1) && (i <= 26))
+                    {
                         finalString += (char)(i + 64) + " : ";
+                        newNode.SetSymbol((char)(i + 64));
+                    }
                     else if ((i >= 27) && (i <= 52))
+                    {
                         finalString += (char)(i + 70) + " : ";
+                        newNode.SetSymbol((char)(i + 70));
+                    }
                     else if ((i >= 53) && (i <= 62))
+                    {
                         finalString += (char)(i - 5) + " : ";
+                        newNode.SetSymbol((char)(i - 5));
+                    }
                     else
+                    {
                         finalString += "new line : ";
+                        newNode.SetSymbol('\n');
+                    }
+                    newNode.SetFreq(array[i]);
                     finalString += array[i] + "\n";
                 }
             }
