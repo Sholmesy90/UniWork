@@ -37,3 +37,15 @@ E:\Patrick\DAA300\Asgn\DAA300_Asgn2014S1_Base\obj\x86\Debug\Asgn.g.resources
 E:\Patrick\DAA300\Asgn\DAA300_Asgn2014S1_Base\obj\x86\Debug\Asgn.Properties.Resources.resources
 E:\Patrick\DAA300\Asgn\DAA300_Asgn2014S1_Base\obj\x86\Debug\GenerateResource.read.1.tlog
 E:\Patrick\DAA300\Asgn\DAA300_Asgn2014S1_Base\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn.exe
+C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn.pdb
+C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn.csprojResolveAssemblyReference.cache
+C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\MainWindow.baml
+C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\App.g.cs
+C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn_MarkupCompile.cache
+C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn.g.resources
+C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn.Properties.Resources.resources
+C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\obj\x86\Debug\Asgn.csproj.GenerateResource.Cache
+C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\bin\Debug\Asgn.exe
+C:\Users\Sam\Documents\GitHub\UniWork\DAA\DAA300Asgn_Base\bin\Debug\Asgn.pdb
