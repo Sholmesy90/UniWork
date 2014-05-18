@@ -63,7 +63,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="NodeList.cs" />
+    <Compile Include="HuffmanGenerator.cs" />
+    <Compile Include="FreqListGenerator.cs" />
     <Compile Include="Node.cs" />
     <Compile Include="DAABitArray.cs" />
     <Compile Include="MainWindow.xaml.cs">

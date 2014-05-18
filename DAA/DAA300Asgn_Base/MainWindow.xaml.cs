@@ -20,6 +20,9 @@ namespace Asgn
     /// </summary>
     public partial class MainWindow : Window
     {
+        List <Node> nodeList = new List<Node>();
+        Node huffmanTree;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,73 +30,29 @@ namespace Asgn
 
         private void btnCompress_Click(object sender, RoutedEventArgs e)
         {
-
+            if (nodeList.Count == 0)
+            {
+                MessageBox.Show("Can't compress a message that doesn't exist!\n" +
+                                "Please enter (1) or more alphanumeric characters");
+            }
+            else
+            {
+                HuffmanGenerator hg = new HuffmanGenerator(nodeList);
+                huffmanTree = hg.CreateTree();
+                hg.BuildEncodingMap(huffmanTree);
+            }
         }
 
         private void btnFreq_Click(object sender, RoutedEventArgs e)
         {
-            char[] charArray = txtPlain.Text.ToCharArray();
-            int[] frequencyArray = new int[64];
-            for (int i = 0; i < charArray.Length; i++)
+            FreqListGenerator flg = new FreqListGenerator();
+            txtFreqTbl.Text = flg.CreateFreqTable(txtPlain.Text.ToCharArray());
+            nodeList = flg.GetFreqList();
+            if (nodeList.Count == 0)
             {
-               int number = 0;
-
-               char c = charArray[i];
-        
-               if ((c >= '0') && (c <= '9'))
-                   number = (int)c + 5;
-               else if ((c >= 'a') && (c <= 'z'))
-                   number = (int)c - 70;
-               else if ((c >= 'A') && (c <= 'Z'))
-                   number = (int)c - 64;
-               else if (c == '\n')
-                   number = 63;
-               else if (c == ' ')
-                   number = 0;
-
-               frequencyArray[number]++;
+                MessageBox.Show("Can't calculate frequency of a message that doesn't exist!\n" +
+                                "Please enter (1) or more alphanumeric characters");
             }
-            printFreq(frequencyArray);
-        }
-
-        private void printFreq(int[] array)
-        {
-            String finalString = "";
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (array[i] != 0)
-                {
-                    Node newNode = new Node();
-                    if (i == 0)
-                    {
-                        finalString += "space : ";
-                        newNode.SetSymbol(' ');
-                    }
-                    else if ((i >= 1) && (i <= 26))
-                    {
-                        finalString += (char)(i + 64) + " : ";
-                        newNode.SetSymbol((char)(i + 64));
-                    }
-                    else if ((i >= 27) && (i <= 52))
-                    {
-                        finalString += (char)(i + 70) + " : ";
-                        newNode.SetSymbol((char)(i + 70));
-                    }
-                    else if ((i >= 53) && (i <= 62))
-                    {
-                        finalString += (char)(i - 5) + " : ";
-                        newNode.SetSymbol((char)(i - 5));
-                    }
-                    else
-                    {
-                        finalString += "new line : ";
-                        newNode.SetSymbol('\n');
-                    }
-                    newNode.SetFreq(array[i]);
-                    finalString += array[i] + "\n";
-                }
-            }
-            txtFreqTbl.Text = finalString;
         }
     }
 }
