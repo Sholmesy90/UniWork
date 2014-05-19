@@ -29,7 +29,7 @@ namespace Asgn
             return ConvertBitsToText(bitArray, n, bitArray.GetCount() / 6);
         }
 
-        public String ConvertBitsToText(DAABitArray bitArray, Node n, int numChars)
+        private String ConvertBitsToText(DAABitArray bitArray, Node n, int numChars)
         {
             long bitRange = 0;
             String finalString = "";
@@ -41,7 +41,7 @@ namespace Asgn
             return finalString;
         }
 
-        public char LookUpChar(long i)
+        private char LookUpChar(long i)
         {
             char c = '!';
             if (i == 0)

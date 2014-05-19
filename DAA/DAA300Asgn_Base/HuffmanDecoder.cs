@@ -10,57 +10,68 @@ namespace Asgn
         public String Decode(char[] charArray, Node n)
         {
             DAABitArray bitArray = ConvertTextToBits(charArray);
+            bitArray = RemoveBuffer(bitArray);
             return ParseTree(n, bitArray); 
         }
 
-        public DAABitArray ConvertTextToBits(char[] charArray)
+        private DAABitArray ConvertTextToBits(char[] charArray)
         {
             DAABitArray bitArray = new DAABitArray();
             int temp;
-            String binary;
+            String binary = "";
+
             foreach (char c in charArray)
             {
                 temp = CharToDecimal(c);
-                binary = Convert.ToString(temp, 2);
-                foreach (char d in binary.ToCharArray())
-                {
-                    if (d == '0')
-                        bitArray.Append(false);
-                    else
-                        bitArray.Append(true);
-                }
+                binary += Convert.ToString(temp, 2);
+            }
+
+            foreach (char d in binary.ToCharArray())
+            {
+                if (d == '0')
+                    bitArray.Append(false);
+                else
+                    bitArray.Append(true);
             }
             return bitArray;
         }
 
-        public String ParseTree(Node n, DAABitArray bitArray)
+        private DAABitArray RemoveBuffer(DAABitArray bitArray)
+        {
+            while (!bitArray.GetBitAsBool(bitArray.GetCount() -1))
+            {
+                bitArray.RemoveLastBit();
+            }
+            bitArray.RemoveLastBit();
+            return bitArray;
+        }
+
+        private String ParseTree(Node n, DAABitArray bitArray)
         {
             String finalString = "";
             Node temp = n;
-            for (int i = 0; i < bitArray.GetCount(); i++)
+            while (bitArray.GetCount() > 0)
             {
-                if (!temp.IsBranch())
-                {
-                    finalString += temp.GetSymbol();
-                    temp = n;
-                }
-                else
+                while (temp.IsBranch())
                 {
                     if (bitArray.GetBitAsBool(0))
                     {
-                        temp = temp.GetLeft();
+                        temp = temp.GetRight();
+                        bitArray.RemoveFirstBit();
                     }
                     else
                     {
-                        temp = temp.GetRight();
+                        temp = temp.GetLeft();
+                        bitArray.RemoveFirstBit();
                     }
-                    bitArray.RemoveFirstBit();
                 }
+                finalString += temp.GetSymbol();
+                temp = n;
             }
             return finalString;
         }
 
-        public int CharToDecimal(char c)
+        private int CharToDecimal(char c)
         {
             int number = 0;
             if ((c >= '0') && (c <= '9'))
@@ -73,6 +84,7 @@ namespace Asgn
                 number = 63;
             else if (c == ' ')
                 number = 0;
+            Console.WriteLine("Decimal of : " + c + " : " + number);
             return number;
         }
 

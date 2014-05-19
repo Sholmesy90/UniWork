@@ -70,7 +70,7 @@ namespace Asgn
         private void btnDecompress_Click(object sender, RoutedEventArgs e)
         {
             HuffmanDecoder hd = new HuffmanDecoder();
-            hd.Decode(txtCompressed.Text.ToCharArray(), huffmanTree);
+            txtPlain.Text = hd.Decode(txtCompressed.Text.ToCharArray(), huffmanTree);
         }
     }
 }

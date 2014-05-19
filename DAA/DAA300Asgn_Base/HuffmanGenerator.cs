@@ -49,7 +49,7 @@ namespace Asgn
             return encodeDict;
         }
 
-        public void BuildRecursive(Node n, Stack<bool> stack)
+        private void BuildRecursive(Node n, Stack<bool> stack)
         {
             if (n.IsBranch())
             {
