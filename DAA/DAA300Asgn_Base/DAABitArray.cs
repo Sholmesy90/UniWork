@@ -105,6 +105,10 @@ namespace Asgn
             m_bits.RemoveAt(m_bits.Count - 1);
         }
 
+        public void RemoveFirstBit()
+        {
+            m_bits.RemoveAt(0);
+        }
 
         /// <summary>
         /// Reverse the bit array.
