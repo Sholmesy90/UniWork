@@ -117,6 +117,12 @@ namespace Asgn
         /// <summary>
         /// Number of bits in the bit array.
         /// </summary>
+        
+        public int GetCount()
+        {
+            return m_bits.Count;
+        }
+
         public int NumBits
         {
             get { return m_bits.Count; }

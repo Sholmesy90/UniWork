@@ -22,25 +22,11 @@ namespace Asgn
     {
         List <Node> nodeList = new List<Node>();
         Node huffmanTree;
+        Dictionary<char, DAABitArray> encodeDict;
 
         public MainWindow()
         {
             InitializeComponent();
-        }
-
-        private void btnCompress_Click(object sender, RoutedEventArgs e)
-        {
-            if (nodeList.Count == 0)
-            {
-                MessageBox.Show("Can't compress a message that doesn't exist!\n" +
-                                "Please enter (1) or more alphanumeric characters");
-            }
-            else
-            {
-                HuffmanGenerator hg = new HuffmanGenerator(nodeList);
-                huffmanTree = hg.CreateTree();
-                hg.BuildEncodingMap(huffmanTree);
-            }
         }
 
         private void btnFreq_Click(object sender, RoutedEventArgs e)
@@ -50,9 +36,41 @@ namespace Asgn
             nodeList = flg.GetFreqList();
             if (nodeList.Count == 0)
             {
-                MessageBox.Show("Can't calculate frequency of a message that doesn't exist!\n" +
+                MessageBox.Show("Cannot calculate frequency of a message that" 
+                                + " doesn't exist!\nPlease enter (1) or more "
+                                + "alphanumeric characters");
+            }
+        }
+
+        private void btnCompress_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtPlain.Text.Count() == 0)
+            {
+                MessageBox.Show("Cannot compress a message that doesn't exist!\n" +
                                 "Please enter (1) or more alphanumeric characters");
             }
+            else if (nodeList.Count == 0)
+            {
+                MessageBox.Show("Cannot compress text without a frequency table!\n" +
+                                "Please generate a frequency table before compression.");
+            }
+            else
+            {
+                HuffmanGenerator hg = new HuffmanGenerator(nodeList);
+                huffmanTree = hg.CreateTree();
+                encodeDict = hg.BuildEncodingMap(huffmanTree);
+
+                HuffmanEncoder he = new HuffmanEncoder();
+                txtCompressed.Text = he.Encode(txtPlain.Text.ToCharArray(), huffmanTree, encodeDict);
+                txtPlain.Text = "";
+                txtFreqTbl.Text = "";
+            }
+        }
+
+        private void btnDecompress_Click(object sender, RoutedEventArgs e)
+        {
+            HuffmanDecoder hd = new HuffmanDecoder();
+            hd.Decode(txtCompressed.Text.ToCharArray(), huffmanTree, encodeDict);
         }
     }
 }

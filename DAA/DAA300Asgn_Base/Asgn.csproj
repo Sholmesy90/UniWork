@@ -63,6 +63,8 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="HuffmanDecoder.cs" />
+    <Compile Include="HuffmanEncoder.cs" />
     <Compile Include="HuffmanGenerator.cs" />
     <Compile Include="FreqListGenerator.cs" />
     <Compile Include="Node.cs" />

@@ -8,7 +8,7 @@ namespace Asgn
     public class HuffmanGenerator
     {
         List<Node> list;
-        Dictionary<char, DAABitArray> codeDict;
+        Dictionary<char, DAABitArray> encodeDict;
 
         public HuffmanGenerator()
         {
@@ -41,10 +41,12 @@ namespace Asgn
             return list.First();
         }
 
-        public void BuildEncodingMap(Node n)
+        public Dictionary<char, DAABitArray> BuildEncodingMap(Node n)
         {
+            encodeDict = new Dictionary<char, DAABitArray>();
             Stack<bool> stack = new Stack<bool>();
             BuildRecursive(n, stack);
+            return encodeDict;
         }
 
         public void BuildRecursive(Node n, Stack<bool> stack)
@@ -61,12 +63,16 @@ namespace Asgn
             }
             else
             {
-                DAABitArray bitArray;
+                DAABitArray bitArray = new DAABitArray();
                 foreach (bool b in stack)
                 {
-
+                    if (b)
+                        bitArray.Append(true);
+                    else
+                        bitArray.Append(false);
                 }
-
+                bitArray.Reverse();
+                encodeDict.Add(n.GetSymbol(), bitArray);
             }
         }
     }
