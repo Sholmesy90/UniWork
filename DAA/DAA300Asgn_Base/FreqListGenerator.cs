@@ -20,7 +20,6 @@ namespace Asgn
             for (int i = 0; i < charArray.Length; i++)
             {
                 int number = 0;
-
                 char c = charArray[i];
 
                 if ((c >= '0') && (c <= '9'))
