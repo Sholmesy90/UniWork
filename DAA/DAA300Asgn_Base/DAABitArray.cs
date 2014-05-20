@@ -196,5 +196,21 @@ namespace Asgn
             return iBitSetVal;
         }
 
+        public override String ToString()
+        {
+            String str = "";
+            for(int i = 0; i < m_bits.Count; i++) 
+            {
+                if (m_bits[i])
+                {
+                    str += '1';
+                }
+                else
+                {
+                    str += '0';
+                }
+            }
+            return str;
+        }
     }
 }

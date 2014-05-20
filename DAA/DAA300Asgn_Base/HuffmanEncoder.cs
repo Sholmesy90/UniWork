@@ -12,6 +12,7 @@ namespace Asgn
             DAABitArray bitArray = new DAABitArray();
             foreach (char c in charArray)
             {
+                Console.WriteLine(c);
                 if (encodeDict.ContainsKey(c))
                 {
                     bitArray.Append(encodeDict[c]);
@@ -21,11 +22,13 @@ namespace Asgn
                     //Handle error.
                 }
             }
+         
             bitArray.Append(true);
             while (bitArray.GetCount() % 6 != 0)
             {
                 bitArray.Append(false);
             }
+            Console.WriteLine(bitArray);
             return ConvertBitsToText(bitArray, n, bitArray.GetCount() / 6);
         }
 

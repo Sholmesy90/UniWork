@@ -10,7 +10,9 @@ namespace Asgn
         public String Decode(char[] charArray, Node n)
         {
             DAABitArray bitArray = ConvertTextToBits(charArray);
+            Console.WriteLine(bitArray);
             bitArray = RemoveBuffer(bitArray);
+            
             return ParseTree(n, bitArray); 
         }
 
@@ -19,11 +21,16 @@ namespace Asgn
             DAABitArray bitArray = new DAABitArray();
             int temp;
             String binary = "";
-
+            String bitString = "";
             foreach (char c in charArray)
             {
                 temp = CharToDecimal(c);
-                binary += Convert.ToString(temp, 2);
+                bitString = Convert.ToString(temp, 2);
+                while (bitString.Length < 6)
+                {
+                    bitString = "0" + bitString;
+                }
+                binary += bitString;
             }
 
             foreach (char d in binary.ToCharArray())
@@ -84,7 +91,6 @@ namespace Asgn
                 number = 63;
             else if (c == ' ')
                 number = 0;
-            Console.WriteLine("Decimal of : " + c + " : " + number);
             return number;
         }
 
