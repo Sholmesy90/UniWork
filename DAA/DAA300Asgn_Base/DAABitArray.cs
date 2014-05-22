@@ -19,7 +19,7 @@ namespace Asgn
         /// </summary>
         public DAABitArray()
         {
-            m_bits = new List<bool>(); 
+            m_bits = new List<bool>();
         }
 
         /// <summary>
@@ -59,7 +59,8 @@ namespace Asgn
         /// <param name="bitSet">The bit array to append.</param>
         public void Append(DAABitArray bitSet)
         {
-            for (int ii = 0; ii < bitSet.NumBits; ii++) {
+            for (int ii = 0; ii < bitSet.NumBits; ii++)
+            {
                 m_bits.Add(bitSet.GetBitAsBool(ii));
             }
         }
@@ -74,10 +75,11 @@ namespace Asgn
             long mask = 0x01;
 
             // Start appending the most-significant bit first
-            mask = mask << (numBits-1);
+            mask = mask << (numBits - 1);
 
             // Append the new bits
-            for (int ii = 0; ii < numBits; ii++) {
+            for (int ii = 0; ii < numBits; ii++)
+            {
                 if ((mask & bitSet) != 0)
                     m_bits.Add(true);
                 else
@@ -121,7 +123,7 @@ namespace Asgn
         /// <summary>
         /// Number of bits in the bit array.
         /// </summary>
-        
+
         public int GetCount()
         {
             return m_bits.Count;
@@ -183,34 +185,19 @@ namespace Asgn
                 throw new ArgumentOutOfRangeException("Max number of bits is " + sizeof(long) * 8);
 
             iBitSetVal = 0;
-            for (int ii = startBitIdx; ii <= endBitIdx; ii++) {
+            for (int ii = startBitIdx; ii <= endBitIdx; ii++)
+            {
                 // Make room for the next bit
                 iBitSetVal = iBitSetVal << 1;
 
-                if (m_bits[ii] == true) {
+                if (m_bits[ii] == true)
+                {
                     iBitSetVal = iBitSetVal | 0x01;
                 }
                 // else the bit shift << will have 'added' a 0 on the end anyways
             }
 
             return iBitSetVal;
-        }
-
-        public override String ToString()
-        {
-            String str = "";
-            for(int i = 0; i < m_bits.Count; i++) 
-            {
-                if (m_bits[i])
-                {
-                    str += '1';
-                }
-                else
-                {
-                    str += '0';
-                }
-            }
-            return str;
         }
     }
 }

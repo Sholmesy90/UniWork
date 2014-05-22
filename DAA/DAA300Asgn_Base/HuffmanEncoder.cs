@@ -5,9 +5,15 @@ using System.Text;
 
 namespace Asgn
 {
+    /// This class is responsible for physically encoding the message
+    /// and returning a string to display to the user. It has one
+    /// public method, which is Encode, which will return the String
+    /// value of the encoded message.
     public class HuffmanEncoder
     {
-        public String Encode(char[] charArray, Node n, Dictionary<char, DAABitArray> encodeDict)
+        /// Takes the char array and the dictionary to generate a bitset
+        /// which is then used to create an encoded character string.
+        public String Encode(char[] charArray, Dictionary<char, DAABitArray> encodeDict)
         {
             DAABitArray bitArray = new DAABitArray();
             foreach (char c in charArray)
@@ -16,33 +22,39 @@ namespace Asgn
                 {
                     bitArray.Append(encodeDict[c]);
                 }
-                else
-                {
-                    //Handle error.
-                }
             }
-         
-            bitArray.Append(true);
+
+            /// We append a '1' on the end of the bit set, followed by a series
+            /// of '0's to pad the bitset to 6 bits. This means when we get to
+            /// decompressing this bitset, we can remove all the 0's off the 
+            /// end until a  '1' is reached, which is then removed to give 
+            /// the actual encoded bitset.
+            bitArray.Append(true); 
             while (bitArray.GetCount() % 6 != 0)
             {
                 bitArray.Append(false);
             }
-            return ConvertBitsToText(bitArray, n, bitArray.GetCount() / 6);
+            return ConvertBitsToText(bitArray, bitArray.GetCount() / 6);
         }
 
-        private String ConvertBitsToText(DAABitArray bitArray, Node n, int numChars)
+        /// Converts a bit array, into a character representation of that bitset.
+        /// Bitsets are defined to be 6 bits long or 2^6, making a possible
+        /// 64 characters represented.
+        private String ConvertBitsToText(DAABitArray bitArray, int numChars)
         {
             long bitRange = 0;
             String finalString = "";
             for (int i = 0; i < numChars; i++)
             {
                 bitRange = bitArray.GetBitRange(0 + (i * 6), 5 + (i * 6));
-                finalString += LookUpChar(bitRange);
+                finalString += DecimalToChar(bitRange);
             }
             return finalString;
         }
 
-        private char LookUpChar(long i)
+        /// Table for retrieving the char value of the bitset, as per 
+        /// assignment specification.
+        private char DecimalToChar(long i)
         {
             char c = '!';
             if (i == 0)

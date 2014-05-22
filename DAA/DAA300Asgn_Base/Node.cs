@@ -5,6 +5,9 @@ using System.Text;
 
 namespace Asgn
 {
+    /// This class represents each of the nodes of the Huffman Tree. It has
+    /// fields for left/right nodes, the symbol (if it's a leaf) and the
+    /// frequency of this symbol.
     public class Node
     {
         private Node left;
@@ -12,6 +15,7 @@ namespace Asgn
         private char symbol;
         private int frequency;
 
+        /// Default constructor
         public Node()
         {
             left = null;
@@ -20,6 +24,7 @@ namespace Asgn
             symbol = '!';
         }
 
+        /// Setters & Getters
         public void SetSymbol(char c)
         {
             symbol = c;
@@ -60,6 +65,8 @@ namespace Asgn
             return frequency;
         }
 
+        /// Determines whether the Node is a branch or a leaf. This is
+        /// important for part of the Huffman Algorithm.
         public bool IsBranch()
         {
             if ((left == null) && (right == null))

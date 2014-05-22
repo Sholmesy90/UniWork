@@ -8,14 +8,14 @@
             <ColumnDefinition Width="73*"/>
         </Grid.ColumnDefinitions>
         <TextBox Height="162" Margin="16,31,193.666,0" Name="txtPlain" VerticalAlignment="Top" AcceptsReturn="True" Grid.ColumnSpan="2" />
-        <TextBox AcceptsReturn="True" Height="162" Margin="16,221,193.666,0" Name="txtCompressed" VerticalAlignment="Top" Grid.ColumnSpan="2" />
+        <TextBox AcceptsReturn="True" Height="162" Margin="16,221,193.666,0" Name="txtCompressed" VerticalAlignment="Top" Grid.ColumnSpan="2" IsEnabled="False" />
         <TextBox Height="352" HorizontalAlignment="Right" Margin="0,31,11.666,0" Name="txtFreqTbl" VerticalAlignment="Top" Width="176" AcceptsReturn="True" Grid.Column="1" IsEnabled="False" />
         <Label Content="Compressed Text:" Height="28" HorizontalAlignment="Left" Margin="16,199,0,0" Name="lblCompressed" VerticalAlignment="Top" />
         <Label Content="Plain Text:" Height="28" HorizontalAlignment="Left" Margin="16,10,0,0" Name="lblPlain" VerticalAlignment="Top" />
         <Label Content="Symbol Table:" Height="28" HorizontalAlignment="Right" Margin="0,10,101.666,0" Name="label1" VerticalAlignment="Top" Grid.Column="1" />
-        <Button Content="_Freq Calc" Height="23" HorizontalAlignment="Right" Margin="0,0,173.666,31" Name="btnFreq" VerticalAlignment="Bottom" Width="75" Grid.ColumnSpan="2" Click="btnFreq_Click" />
-        <Button Content="_Compress" Height="23" HorizontalAlignment="Right" Margin="0,0,92.666,31" Name="btnCompress" VerticalAlignment="Bottom" Width="75" Grid.Column="1" Click="btnCompress_Click" />
-        <Button Content="_Decompress" Height="23" HorizontalAlignment="Right" Margin="0,0,11.666,31" Name="btnDecompress" VerticalAlignment="Bottom" Width="75" Grid.Column="1" Click="btnDecompress_Click" />
+        <Button Content="_Freq Calc" Height="23" HorizontalAlignment="Right" Margin="0,0,173.666,31" Name="btnFreq" VerticalAlignment="Bottom" Width="75" Grid.ColumnSpan="2" Click="BtnFreqClick" />
+        <Button Content="_Compress" Height="23" HorizontalAlignment="Right" Margin="0,0,92.666,31" Name="btnCompress" VerticalAlignment="Bottom" Width="75" Grid.Column="1" Click="BtnCompressClick" />
+        <Button Content="_Decompress" Height="23" HorizontalAlignment="Right" Margin="0,0,11.666,31" Name="btnDecompress" VerticalAlignment="Bottom" Width="75" Grid.Column="1" Click="BtnDecompressClick" />
         <Grid.Background>
             <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                 <GradientStop Color="White" Offset="0" />

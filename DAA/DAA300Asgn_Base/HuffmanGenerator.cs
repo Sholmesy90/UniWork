@@ -5,21 +5,29 @@ using System.Text;
 
 namespace Asgn
 {
+    /// This class is responsible for generating the Huffman Tree and 
+    /// also creating a dictionary for the encoder to use to encode its msg.
+    /// The dictionary is passed to the encoder through the method call
+    /// BuildEncodingMap().
     public class HuffmanGenerator
     {
         List<Node> list;
         Dictionary<char, DAABitArray> encodeDict;
 
+        /// Default constructor
         public HuffmanGenerator()
         {
             list = new List<Node>();
         }
-
+        /// Alternate constructor
         public HuffmanGenerator(List<Node> inList)
         {
             list = inList;
         }
 
+        /// Creates a Huffman Tree based on its current list value.
+        /// returns the Node of the root of the tree, allowing the tree 
+        /// to be used for compression and decompression.
         public Node CreateTree()
         {
             while (list.Count > 1)
@@ -41,6 +49,10 @@ namespace Asgn
             return list.First();
         }
 
+        /// This function is used to build the dictionary used by compression
+        /// and decompression in the algorithm. it takes the root node and 
+        /// creates a stack, which it passes to the recursive function 
+        /// BuildRecursive(). 
         public Dictionary<char, DAABitArray> BuildEncodingMap(Node n)
         {
             encodeDict = new Dictionary<char, DAABitArray>();
@@ -49,6 +61,8 @@ namespace Asgn
             return encodeDict;
         }
 
+        /// This function recursively traverses the tree finding the binary 
+        /// values to represent the characters of the leaf Nodes.
         private void BuildRecursive(Node n, Stack<bool> stack)
         {
             if (n.IsBranch())
@@ -71,7 +85,7 @@ namespace Asgn
                     else
                         bitArray.Append(false);
                 }
-                bitArray.Reverse();
+                bitArray.Reverse(); /// Stack puts it in reverse order. Fixes.
                 encodeDict.Add(n.GetSymbol(), bitArray);
             }
         }

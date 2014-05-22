@@ -35,23 +35,36 @@ namespace Asgn
         /// for each unique character symbol. This is used in 
         /// compression and decompression, and the list is stored
         /// for later.
-        private void btnFreq_Click(object sender, RoutedEventArgs e)
+        private void BtnFreqClick(object sender, RoutedEventArgs e)
         {
             FreqListGenerator flg = new FreqListGenerator();
-            /// Automatically generate the frequency table.
-            txtFreqTbl.Text = flg.CreateFreqTable(txtPlain.Text.ToCharArray());
-            /// Get the list of nodes for each character symbol.
+            String freqTable = flg.CreateFreqTable(txtPlain.Text.ToCharArray());
             nodeList = flg.GetFreqList();
-            /// Error handling
-            if (nodeList.Count == 0)
+            if (freqTable.Count() == 0)
             {
-                MessageBox.Show("Cannot calculate frequency of a message that" 
+                MessageBox.Show("Cannot calculate frequency of a message that"
                                 + " doesn't exist!\nPlease enter (1) or more "
                                 + "alphanumeric characters");
             }
+            else if (!flg.CharIsValid(freqTable[0])) /// Invalid character
+            {
+                MessageBox.Show("One or more characters is invalid. Please"
+                                + " use characters 0-9,\na-z, A-Z, space and"
+                                + " new line. Invalid characters : " 
+                                + freqTable);          
+            }
+            else
+            {
+                txtFreqTbl.Text = freqTable;
+            }
         }
 
-        private void btnCompress_Click(object sender, RoutedEventArgs e)
+        /// Takes an input string and the frequency list generated earlier to
+        /// create a Huffman Tree to be used for the compression and
+        /// decompression. It then encodes the provided text string and outputs
+        /// it to the user in a compressed format, which can later be used
+        /// to decompress to verify the result.
+        private void BtnCompressClick(object sender, RoutedEventArgs e)
         {
             if (txtPlain.Text.Count() == 0)
             {
@@ -62,8 +75,8 @@ namespace Asgn
             else if (nodeList.Count == 0)
             {
                 MessageBox.Show("Cannot compress text without a frequency"
-                                + " table!\n + Please generate a frequency "
-                                + "table before compression.");
+                                + " table!\nPlease generate a frequency "
+                                + "table before compression");
             }
             else
             {
@@ -72,17 +85,39 @@ namespace Asgn
                 encodeDict = hg.BuildEncodingMap(huffmanTree);
 
                 HuffmanEncoder he = new HuffmanEncoder();
-                txtCompressed.Text = he.Encode(txtPlain.Text.ToCharArray(), 
-                                                huffmanTree, encodeDict);
+                txtCompressed.Text = he.Encode(txtPlain.Text.ToCharArray(), encodeDict);
                 txtPlain.Text = "";
                 txtFreqTbl.Text = "";
             }
         }
 
-        private void btnDecompress_Click(object sender, RoutedEventArgs e)
+        /// Takes the compressed text and the existing Huffman Tree and 
+        /// parses the text through the tree to decode the message back into
+        /// it's original format.
+        private void BtnDecompressClick(object sender, RoutedEventArgs e)
         {
-            HuffmanDecoder hd = new HuffmanDecoder();
-            txtPlain.Text = hd.Decode(txtCompressed.Text.ToCharArray(), huffmanTree);
+            if (txtCompressed.Text.Count() == 0)
+            {
+                MessageBox.Show("Cannot decompress text that doesn't exist!"
+                                + "\nPlease compress text before decompressing");
+            }
+            else if (encodeDict.Count() == 0)
+            {
+                MessageBox.Show("No frequency table/Huffman tree provided\nPlease "
+                                + "generate one by compressing some text before"
+                                + " decompressing");
+            }
+            else
+            {
+                HuffmanDecoder hd = new HuffmanDecoder();
+                txtPlain.Text = hd.Decode(txtCompressed.Text.ToCharArray(),
+                                                    huffmanTree);
+
+                FreqListGenerator flg = new FreqListGenerator();
+                txtFreqTbl.Text = flg.CreateFreqTable(txtPlain.Text.ToCharArray());
+                nodeList = flg.GetFreqList();
+                txtCompressed.Text = "";
+            }
         }
     }
 }

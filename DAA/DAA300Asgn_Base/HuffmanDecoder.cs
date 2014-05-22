@@ -5,17 +5,23 @@ using System.Text;
 
 namespace Asgn
 {
+    /// This class is responsible for decoding an encrypted message and
+    /// returning it as a string. The class has one public method Decode(),
+    /// which takes a chararray (the encrypted msg) and the root node of the 
+    /// Huffman Tree. 
     public class HuffmanDecoder
     {
+        /// Takes the char array & node. Returns the original message.
         public String Decode(char[] charArray, Node n)
         {
             DAABitArray bitArray = ConvertTextToBits(charArray);
-            Console.WriteLine(bitArray);
             bitArray = RemoveBuffer(bitArray);
             
             return ParseTree(n, bitArray); 
         }
 
+        /// Converts the scrambled alphanumeric values provided into a bitset
+        /// which will be used to parse through the Huffman Tree.
         private DAABitArray ConvertTextToBits(char[] charArray)
         {
             DAABitArray bitArray = new DAABitArray();
@@ -26,7 +32,9 @@ namespace Asgn
             {
                 temp = CharToDecimal(c);
                 bitString = Convert.ToString(temp, 2);
-                while (bitString.Length < 6)
+
+                /// Append leading 0's, removed from the ToString() function
+                while (bitString.Length < 6) 
                 {
                     bitString = "0" + bitString;
                 }
@@ -43,16 +51,22 @@ namespace Asgn
             return bitArray;
         }
 
+        /// When the message is encoded, a '1' is added to the bitset,
+        /// followed by a series of '0's to buffer the bitset into sections
+        /// of 6 bits each (% 6). This function removes this buffer to 
+        /// provide the original bitset.
         private DAABitArray RemoveBuffer(DAABitArray bitArray)
         {
             while (!bitArray.GetBitAsBool(bitArray.GetCount() -1))
             {
-                bitArray.RemoveLastBit();
+                bitArray.RemoveLastBit(); /// Remove '0's
             }
-            bitArray.RemoveLastBit();
+            bitArray.RemoveLastBit(); /// Remove '1'
             return bitArray;
         }
 
+        /// Parses the Huffman tree to retrieve symbol values of the
+        /// provided bitset. 
         private String ParseTree(Node n, DAABitArray bitArray)
         {
             String finalString = "";
@@ -78,6 +92,8 @@ namespace Asgn
             return finalString;
         }
 
+        /// Convert a char into the decimal value as per the assignment
+        /// specification.
         private int CharToDecimal(char c)
         {
             int number = 0;
