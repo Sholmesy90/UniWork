@@ -15,11 +15,10 @@ public class ClassFile
     private int accessFlags;
     private int thisClass;
     private int superClass;
-    private int interfacesCount;
-    private int[] interfaces;
-    private int fieldsCount;
-    private int attributesCount;
-    private Attribute[] attributeInfo;
+    private InterfaceSet interfaceInfo;
+    private FieldSet fieldInfo;
+    private MethodSet methodInfo;
+    private AttributeSet attributeInfo;
     private String tc;
     private String sc;
 
@@ -37,43 +36,35 @@ public class ClassFile
         accessFlags = dis.readUnsignedShort();
         thisClass = dis.readUnsignedShort();
         superClass = dis.readUnsignedShort();
-        interfacesCount = dis.readUnsignedShort();
-        interfaces = new int[interfacesCount];
-        for (int i = 0; i < interfacesCount; i++)
-        {
-        	interfaces[i] = dis.readUnsignedShort();
-        }      
-        
-        fieldsCount = dis.readUnsignedShort();
-        
-        attributesCount = dis.readUnsignedShort();
-        for (int i = 0; i < attributesCount; i++)
-        {
-        	attributeInfo[i] = new Attribute(dis);
-        }
 
-
+        interfaceInfo = new InterfaceSet(dis);
+        fieldInfo = new FieldSet(dis, constantPool);
+        methodInfo = new MethodSet(dis, constantPool);
+        attributeInfo = new AttributeSet(dis, constantPool);
 
         tc = ((ConstantUtf8)constantPool.getEntry(
             ((ConstantClass)constantPool.getEntry(thisClass)).getNameIndex()
             )).getBytes();
     	sc = ((ConstantUtf8)constantPool.getEntry(
             ((ConstantClass)constantPool.getEntry(superClass)).getNameIndex()
-            )).getBytes();;
+            )).getBytes();
     }
 
     /** Returns the contents of the class file as a formatted String. */
     public String toString()
     {
         return String.format(
-            "Filename: %s\n" +
+            "\nFilename: %s\n" +
             "Magic: 0x%08x\n" +
-            "Class file format version: %d.%d\n\n" +
-            "Constant pool:\n\n%s" + "Access flags: 0x%04x\n" +
             "This class: " + tc  + "\nSuper class: " + sc +
-            "\nNum interfaces: %d\n",
-            filename, magic, majorVersion, minorVersion, constantPool,
-            accessFlags, interfacesCount);
+            "\nAccess flags: 0x%04x\n" + 
+            "Class file format version: %d.%d\n\n" +
+            "Constant pool:\n\n%s" + "\n\nInterface information:\n\n%s" + 
+            "\n\nField information:\n\n%s" + "\n\nMethod information:\n\n%s" + 
+            "\n\nAttribute information:\n\n%s"
+
+            ,filename, magic, accessFlags, majorVersion, minorVersion, constantPool,
+            interfaceInfo, fieldInfo, methodInfo, attributeInfo);
     }
 }
 
