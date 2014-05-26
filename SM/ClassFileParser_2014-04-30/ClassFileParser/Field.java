@@ -8,7 +8,8 @@ public class Field
 	private AttributeSet attributes;
 
 	public Field (DataInputStream dis, ConstantPool cp) throws IOException,
-													 InvalidConstantPoolIndex
+													 InvalidConstantPoolIndex,
+													 CodeParsingException
 	{
 		accessFlags = dis.readUnsignedShort();
 		nameIndex = dis.readUnsignedShort();

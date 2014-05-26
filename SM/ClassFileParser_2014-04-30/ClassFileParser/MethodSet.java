@@ -6,7 +6,8 @@ public class MethodSet
 	private int methodCount;
 
 	public MethodSet(DataInputStream dis, ConstantPool cp) throws IOException,
-													InvalidConstantPoolIndex
+													InvalidConstantPoolIndex,
+													CodeParsingException
 	{
 		methodCount = dis.readUnsignedShort();
 		methodArray = new Method[methodCount];

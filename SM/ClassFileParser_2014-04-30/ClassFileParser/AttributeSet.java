@@ -6,7 +6,7 @@ public class AttributeSet
 	private int attributeCount;
 
 	public AttributeSet(DataInputStream dis, ConstantPool cp) throws IOException, 
-														InvalidConstantPoolIndex
+								  InvalidConstantPoolIndex, CodeParsingException
 	{
 		attributeCount = dis.readUnsignedShort();
 		attributeArray = new AbstractAttribute[attributeCount];

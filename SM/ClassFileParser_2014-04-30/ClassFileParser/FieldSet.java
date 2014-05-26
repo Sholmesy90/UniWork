@@ -6,7 +6,8 @@ public class FieldSet
 	private int fieldsCount;
 
 	public FieldSet(DataInputStream dis, ConstantPool cp) throws IOException, 
-													InvalidConstantPoolIndex
+													InvalidConstantPoolIndex,
+													CodeParsingException
 	{
 		fieldsCount = dis.readUnsignedShort();
 		fieldArray = new Field[fieldsCount];

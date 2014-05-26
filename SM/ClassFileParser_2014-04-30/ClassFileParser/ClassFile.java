@@ -56,14 +56,13 @@ public class ClassFile
         return String.format(
             "\nFilename: %s\n" +
             "Magic: 0x%08x\n" +
-            "This class: " + tc  + "\nSuper class: " + sc +
+            "This class: %s"   + "\nSuper class: %s" +
             "\nAccess flags: 0x%04x\n" + 
             "Class file format version: %d.%d\n\n" +
             "Constant pool:\n\n%s" + "\n\nInterface information:\n\n%s" + 
             "\n\nField information:\n\n%s" + "\n\nMethod information:\n\n%s" + 
             "\n\nAttribute information:\n\n%s"
-
-            ,filename, magic, accessFlags, majorVersion, minorVersion, constantPool,
+            ,filename, magic, tc, sc, accessFlags, majorVersion, minorVersion, constantPool,
             interfaceInfo, fieldInfo, methodInfo, attributeInfo);
     }
 }

@@ -5,7 +5,8 @@ public abstract class AbstractAttribute
 	protected int attributeNameIndex;
 	protected long attributeLength;
 
-	public static AbstractAttribute checkType (DataInputStream dis, ConstantPool cp) throws IOException, InvalidConstantPoolIndex
+	public static AbstractAttribute checkType (DataInputStream dis, 
+		ConstantPool cp) throws IOException, InvalidConstantPoolIndex, CodeParsingException
 	{
 		int temp = dis.readUnsignedShort();
 		String s = ((ConstantUtf8)cp.getEntry(temp)).getBytes();

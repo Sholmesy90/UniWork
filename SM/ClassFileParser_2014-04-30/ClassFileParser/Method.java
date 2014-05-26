@@ -8,7 +8,8 @@ public class Method
 	private AttributeSet attributes;
 
 	public Method (DataInputStream dis, ConstantPool cp) throws IOException,
-													InvalidConstantPoolIndex
+													InvalidConstantPoolIndex,
+													CodeParsingException
 	{
 		accessFlags = dis.readUnsignedShort();
 		nameIndex = dis.readUnsignedShort();
