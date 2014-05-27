@@ -21,4 +21,9 @@ public class Method
 	{
 		return String.format("%3s%9s%9s   %15s\n", accessFlags, nameIndex, descriptionIndex, attributes);
 	}
+
+	public int getAccessFlags() { return accessFlags; }
+	public int getNameIndex() { return nameIndex; }
+	public int getDescIndex() { return descriptionIndex; }
+	public AttributeSet getAttributeSet() { return attributes; }
 }

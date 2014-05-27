@@ -14,7 +14,7 @@ public class ClassFileParser
             try
             {
                 ClassFile cf = new ClassFile(args[0]);
-                System.out.println(cf);
+                //System.out.println(cf);
             }
             catch(IOException e)
             {

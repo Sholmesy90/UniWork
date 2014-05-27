@@ -48,6 +48,8 @@ public class ClassFile
     	sc = ((ConstantUtf8)constantPool.getEntry(
             ((ConstantClass)constantPool.getEntry(superClass)).getNameIndex()
             )).getBytes();
+
+        methodInfo.printList(constantPool);
     }
 
     /** Returns the contents of the class file as a formatted String. */

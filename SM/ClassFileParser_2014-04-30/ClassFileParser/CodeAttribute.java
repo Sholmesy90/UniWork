@@ -59,10 +59,8 @@ public class CodeAttribute extends AbstractAttribute
 				byte[] bytes = inList.get(i).getExtraBytes();
 				int combination = bytes[0] << 8 | bytes[1];
 
-				ConstantMethodRef method = (ConstantMethodRef)cp.getEntry(combination);
-				methodList.add(method);
-
-				System.out.println(method.getName());
+				ConstantMethodRef methodRef = (ConstantMethodRef)cp.getEntry(combination);
+				methodList.add(methodRef);
 			}
 		}
 		return methodList;
