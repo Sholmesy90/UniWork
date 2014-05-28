@@ -49,7 +49,8 @@ public class RSACrypto
 	/// using recursion.
 	private BigInteger gcd(BigInteger a, BigInteger b)
 	{
-		if ((a.compareTo(BigInteger.ZERO) == 0) || (b.compareTo(BigInteger.ZERO) == 0))
+		if ((a.compareTo(BigInteger.ZERO) == 0) || 
+			(b.compareTo(BigInteger.ZERO) == 0))
 		{
 			return a.add(b);
 		}
