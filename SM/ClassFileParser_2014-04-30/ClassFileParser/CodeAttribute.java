@@ -10,6 +10,7 @@ public class CodeAttribute extends AbstractAttribute
 	private int exceptionTableLength;
 	private byte[] exceptionTable;
 	private AttributeSet attributeInfo;
+	private ArrayList<Instruction> insList;
 
 	public CodeAttribute(DataInputStream dis, int i, ConstantPool cp) throws IOException,
 																InvalidConstantPoolIndex,
@@ -32,7 +33,7 @@ public class CodeAttribute extends AbstractAttribute
 	public ArrayList<Instruction> CreateInstructionList() throws CodeParsingException
 	{
 		int curOffSet = 0;
-		ArrayList<Instruction> insList = new ArrayList<Instruction>();
+		insList = new ArrayList<Instruction>();
 		do 
 		{
 			Instruction newInst = new Instruction(code, curOffSet);
@@ -65,4 +66,6 @@ public class CodeAttribute extends AbstractAttribute
 		}
 		return methodList;
 	}
+
+	public ArrayList<Instruction> getInstructList() { return insList; }
 }

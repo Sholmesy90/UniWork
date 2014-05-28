@@ -29,4 +29,6 @@ public class AttributeSet
 	public int getCount() { return attributeCount; }
 
 	public int getNameAt(int i) { return attributeArray[i].getName(); }
+
+	public AbstractAttribute getAttribute(int i) { return attributeArray[i]; }
 }
