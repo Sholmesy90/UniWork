@@ -2,6 +2,7 @@ import java.io.*;
 
 public class FieldSet
 {
+	/// Stores a set of field 
 	private Field[] fieldArray;
 	private int fieldsCount;
 
@@ -15,17 +16,5 @@ public class FieldSet
 		{
 			fieldArray[i] = new Field(dis, cp);
 		}
-	}
-
-	public String toString()
-	{
-		String s =  "Num of fields: " + fieldsCount + "\n" +
-					"Flags  NameIdx  DescIdx\n" +
-				    "-----------------------\n";
-		for (int i = 0; i < fieldsCount; i++)
-		{
-			s += fieldArray[i];
-		}
-		return s;
 	}
 }

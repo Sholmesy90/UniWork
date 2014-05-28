@@ -1,5 +1,8 @@
 import java.io.*;
 
+
+/// OtherAttribute inherits from AbstractAttribute and is used to read
+/// in the attributes that aren't Code attributes.
 public class OtherAttribute extends AbstractAttribute
 {
 	private byte[] info;

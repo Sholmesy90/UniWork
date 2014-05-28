@@ -1,10 +1,6 @@
 import java.io.*;
 import java.util.*;
 
-/// CodeAttribute inherits from AbstractAttribute and has a list of instruction
-/// that it generates in the helper method CreateInstructionList().
-/// This list of instructions is used to parse through the methods to
-/// determine the final call structure of the class.
 public class CodeAttribute extends AbstractAttribute
 {
 	private int maxStack;
@@ -31,10 +27,9 @@ public class CodeAttribute extends AbstractAttribute
 		exceptionTable = new byte[exceptionTableLength*8];
 		dis.readFully(exceptionTable);
 		attributeInfo = new AttributeSet(dis, cp);
-		CreateInstructionList();
+		CreateMethodRefList(CreateInstructionList(), cp);
 	}
 
-	/// Populates the instruction list with instructions.
 	public ArrayList<Instruction> CreateInstructionList() throws CodeParsingException
 	{
 		int curOffSet = 0;
@@ -48,6 +43,22 @@ public class CodeAttribute extends AbstractAttribute
 		while (curOffSet < code.length);
 		return insList;
 	}
+	
+	public ArrayList<ConstantMethodRef> CreateMethodRefList(
+		ArrayList<Instruction> inList, ConstantPool cp) throws InvalidConstantPoolIndex
+		{
+			ArrayList<ConstantMethodRef> methodList = new ArrayList<ConstantMethodRef>();
+			for (int i = 0; i < inList.size(); i++)
+			{
+				if ((inList.get(i).getOpCode().getMnemonic().equals("invokestatic"))
+				||  (inList.get(i).getOpCode().getMnemonic().equals("invokevirtual")
+				||  (inList.get(i).getOpCode().getMnemonic().equals("invokeinterface")
+				||  (inList.get(i).getOpCode().getMnemonic().equals("invokespecial"))
+				{
+					
+				}
+			}
+		}
 
 	public ArrayList<Instruction> getInstructList() { return insList; }
 }

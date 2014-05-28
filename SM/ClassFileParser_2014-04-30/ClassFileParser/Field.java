@@ -1,5 +1,6 @@
 import java.io.*;
 
+/// Stores all the neccesary field information.
 public class Field
 {
 	private int accessFlags;
@@ -15,10 +16,5 @@ public class Field
 		nameIndex = dis.readUnsignedShort();
 		descriptionIndex = dis.readUnsignedShort();
 		attributes = new AttributeSet(dis, cp);
-	}
-
-	public String toString()
-	{
-		return String.format("%3s%9s%9s   %15s\n", accessFlags, nameIndex, descriptionIndex, attributes);
 	}
 }

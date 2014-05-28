@@ -1,5 +1,7 @@
 import java.io.*;
 
+/// Stores all the neccesary interface information
+
 public class InterfaceSet
 {
 	private int[] interfaceArray;

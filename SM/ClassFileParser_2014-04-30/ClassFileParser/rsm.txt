@@ -1,0 +1,1232 @@
+                      Report Banner - Edit rsm.cfg File
+
+           Resource Standard Metrics (TM) for C, C++, C# and Java
+                   Version 7.75 - mSquaredTechnologies.com
+
+  License Type: Shareware Evaluation License
+  Licensed To : Shareware End User - Distribute Freely
+  License No. : SW1380                          License Date: Dec 06, 1998
+  Build Date  : Sep  2 2009                         Run Date: May 29, 2014
+  (C)1996-2009 M Squared Technologies LLC
+  ________________________________________________________________________
+
+  License File: /opt/rsm/rsm.lic
+  Config. File: /opt/rsm/rsm.cfg
+  Command Line: -Tp -Ns -Orsm.txt AbstractAttribute.java AttributeSet.java
+                 ClassFile.java ClassFileParserException.java ClassFilePar
+                ser.java CodeAttribute.java ConstantPool.java CPEntry.java
+                 Field.java FieldSet.java Instruction.java InterfaceSet.ja
+                va Method.java MethodSet.java Opcode.java OtherAttribute.j
+                ava Test1.java Test2.java Test3.java Test4.java Test5.java
+                 Test6.java Test7.java Test8.java Test9.java TotalTester.j
+                ava TreeGenerator.java 
+  UDQN File   : /opt/rsm/rsm_udqn.cfg
+
+  Thu May 29 05:55:53 2014
+  AbstractAttribute.java
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  36: Line   10, Class specification contains protected data
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  36: Line   11, Class specification contains protected data
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #   1: Line   15, Physical line length > 80 characters
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   22, TAB character has been identified
+  Notice #  30: Line   22, TAB character has been identified
+  Notice #  30: Line   23, TAB character has been identified
+  Notice #  30: Line   23, TAB character has been identified
+  Notice #  30: Line   24, TAB character has been identified
+  Notice #  30: Line   24, TAB character has been identified
+  Notice #  30: Line   25, TAB character has been identified
+  Notice #  30: Line   25, TAB character has been identified
+  Notice #  30: Line   25, TAB character has been identified
+  Notice #  30: Line   26, TAB character has been identified
+  Notice #  30: Line   26, TAB character has been identified
+  Notice #  30: Line   27, TAB character has been identified
+  Notice #  46: Line   27, Function/Class Blank Line content less < 10.0%
+  Notice #  27: Line   27, Number of function return points > 1
+  Notice #  30: Line   29, TAB character has been identified
+  Notice #  30: Line   30, TAB character has been identified
+  Notice #  30: Line   31, TAB character has been identified
+  Notice #   1: Line   32, Physical line length > 80 characters
+  Notice #  30: Line   32, TAB character has been identified
+  Notice #  30: Line   32, TAB character has been identified
+  Notice #  30: Line   33, TAB character has been identified
+  Notice #  49: Line   33, Function appears to have null or blank parameters
+  Notice #  30: Line   35, TAB character has been identified
+  Notice #  30: Line   36, TAB character has been identified
+  Notice #  49: Line   36, Function appears to have null or blank parameters
+  Notice #  30: Line   37, TAB character has been identified
+  Notice #  51: Line   37, No comment preceding a function block
+  Notice #  49: Line   37, Function appears to have null or blank parameters
+
+  Thu May 29 06:00:40 2014
+  AttributeSet.java
+  Notice #  30: Line    7, TAB character has been identified
+  Notice #  30: Line    8, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  50: Line   16, Variable assignment to a literal number
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  46: Line   21, Function/Class Blank Line content less < 10.0%
+  Notice #  30: Line   23, TAB character has been identified
+  Notice #  30: Line   24, TAB character has been identified
+  Notice #  51: Line   24, No comment preceding a function block
+  Notice #  30: Line   25, TAB character has been identified
+  Notice #  30: Line   25, TAB character has been identified
+  Notice #  30: Line   26, TAB character has been identified
+  Notice #  30: Line   26, TAB character has been identified
+  Notice #  50: Line   26, Variable assignment to a literal number
+  Notice #  30: Line   27, TAB character has been identified
+  Notice #  30: Line   27, TAB character has been identified
+  Notice #  30: Line   28, TAB character has been identified
+  Notice #  30: Line   28, TAB character has been identified
+  Notice #  30: Line   28, TAB character has been identified
+  Notice #  30: Line   29, TAB character has been identified
+  Notice #  30: Line   29, TAB character has been identified
+  Notice #  30: Line   30, TAB character has been identified
+  Notice #  30: Line   30, TAB character has been identified
+  Notice #  30: Line   31, TAB character has been identified
+  Notice #  17: Line   31, Function comment content less than 10.0%
+  Notice #  46: Line   31, Function/Class Blank Line content less < 10.0%
+  Notice #  49: Line   31, Function appears to have null or blank parameters
+  Notice #  30: Line   33, TAB character has been identified
+  Notice #  30: Line   34, TAB character has been identified
+  Notice #  49: Line   34, Function appears to have null or blank parameters
+  Notice #  30: Line   36, TAB character has been identified
+  Notice #  51: Line   36, No comment preceding a function block
+  Notice #  30: Line   38, TAB character has been identified
+  Notice #  51: Line   38, No comment preceding a function block
+
+  Thu May 29 06:09:15 2014
+  ClassFile.java
+  Notice #   1: Line   52, Physical line length > 80 characters
+  Notice #   1: Line   57, Physical line length > 80 characters
+  Notice #   1: Line   58, Physical line length > 80 characters
+  Notice #  50: Line   59, Variable assignment to a literal number
+  Notice #   1: Line   62, Physical line length > 80 characters
+  Notice #   1: Line   63, Physical line length > 80 characters
+  Notice #  51: Line   69, No comment preceding a function block
+  Notice #  49: Line   69, Function appears to have null or blank parameters
+  Notice #  51: Line   70, No comment preceding a function block
+  Notice #  49: Line   70, Function appears to have null or blank parameters
+  Notice #  51: Line   71, No comment preceding a function block
+  Notice #  49: Line   71, Function appears to have null or blank parameters
+  Notice #   1: Line   72, Physical line length > 80 characters
+  Notice #  51: Line   72, No comment preceding a function block
+  Notice #  49: Line   72, Function appears to have null or blank parameters
+
+  Wed May 28 21:47:40 2014
+  ClassFileParserException.java
+  Notice #  51: Line   10, No comment preceding a function block
+  Notice #  51: Line   15, No comment preceding a function block
+  Notice #  47: Line   18, File Blank Line content < 10.0%
+
+  Thu May 29 06:10:03 2014
+  ClassFileParser.java
+  Notice #  51: Line   14, No comment preceding a function block
+  Notice #  38: Line   17, Exception Handling 'try'- 'catch' has been identified
+  Notice #   1: Line   26, Physical line length > 80 characters
+  Notice #   1: Line   29, Physical line length > 80 characters
+  Notice #   1: Line   35, Physical line length > 80 characters
+  Notice #   1: Line   37, Physical line length > 80 characters
+  Notice #   1: Line   40, Physical line length > 80 characters
+  Notice #   1: Line   42, Physical line length > 80 characters
+  Notice #  17: Line   61, Function comment content less than 10.0%
+
+  Thu May 29 06:13:05 2014
+  CodeAttribute.java
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #   1: Line   19, Physical line length > 80 characters
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   22, TAB character has been identified
+  Notice #  51: Line   22, No comment preceding a function block
+  Notice #  30: Line   23, TAB character has been identified
+  Notice #  30: Line   23, TAB character has been identified
+  Notice #   1: Line   24, Physical line length > 80 characters
+  Notice #  30: Line   24, TAB character has been identified
+  Notice #  30: Line   24, TAB character has been identified
+  Notice #  30: Line   25, TAB character has been identified
+  Notice #  30: Line   25, TAB character has been identified
+  Notice #  30: Line   26, TAB character has been identified
+  Notice #  30: Line   26, TAB character has been identified
+  Notice #  30: Line   27, TAB character has been identified
+  Notice #  30: Line   27, TAB character has been identified
+  Notice #  30: Line   28, TAB character has been identified
+  Notice #  30: Line   28, TAB character has been identified
+  Notice #  30: Line   29, TAB character has been identified
+  Notice #  30: Line   29, TAB character has been identified
+  Notice #  30: Line   30, TAB character has been identified
+  Notice #  30: Line   30, TAB character has been identified
+  Notice #  30: Line   31, TAB character has been identified
+  Notice #  30: Line   31, TAB character has been identified
+  Notice #  30: Line   32, TAB character has been identified
+  Notice #  30: Line   32, TAB character has been identified
+  Notice #  30: Line   33, TAB character has been identified
+  Notice #  30: Line   33, TAB character has been identified
+  Notice #  30: Line   34, TAB character has been identified
+  Notice #  30: Line   34, TAB character has been identified
+  Notice #  30: Line   35, TAB character has been identified
+  Notice #  17: Line   35, Function comment content less than 10.0%
+  Notice #  46: Line   35, Function/Class Blank Line content less < 10.0%
+  Notice #  30: Line   37, TAB character has been identified
+  Notice #   1: Line   38, Physical line length > 80 characters
+  Notice #  30: Line   38, TAB character has been identified
+  Notice #  30: Line   39, TAB character has been identified
+  Notice #  30: Line   40, TAB character has been identified
+  Notice #  30: Line   40, TAB character has been identified
+  Notice #  50: Line   40, Variable assignment to a literal number
+  Notice #  30: Line   41, TAB character has been identified
+  Notice #  30: Line   41, TAB character has been identified
+  Notice #  30: Line   42, TAB character has been identified
+  Notice #  30: Line   42, TAB character has been identified
+  Notice #  30: Line   43, TAB character has been identified
+  Notice #  30: Line   43, TAB character has been identified
+  Notice #  30: Line   44, TAB character has been identified
+  Notice #  30: Line   44, TAB character has been identified
+  Notice #  30: Line   44, TAB character has been identified
+  Notice #  30: Line   45, TAB character has been identified
+  Notice #  30: Line   45, TAB character has been identified
+  Notice #  30: Line   45, TAB character has been identified
+  Notice #  30: Line   46, TAB character has been identified
+  Notice #  30: Line   46, TAB character has been identified
+  Notice #  30: Line   46, TAB character has been identified
+  Notice #  30: Line   47, TAB character has been identified
+  Notice #  30: Line   47, TAB character has been identified
+  Notice #  30: Line   48, TAB character has been identified
+  Notice #  30: Line   48, TAB character has been identified
+  Notice #  30: Line   49, TAB character has been identified
+  Notice #  30: Line   49, TAB character has been identified
+  Notice #  30: Line   50, TAB character has been identified
+  Notice #  17: Line   50, Function comment content less than 10.0%
+  Notice #  46: Line   50, Function/Class Blank Line content less < 10.0%
+  Notice #  49: Line   50, Function appears to have null or blank parameters
+  Notice #  30: Line   52, TAB character has been identified
+  Notice #  51: Line   52, No comment preceding a function block
+  Notice #  49: Line   52, Function appears to have null or blank parameters
+  Notice #  46: Line   53, Function/Class Blank Line content less < 10.0%
+  Notice #  47: Line   53, File Blank Line content < 10.0%
+
+  Wed May 28 21:47:40 2014
+  ConstantPool.java
+  Notice #  50: Line   25, Variable assignment to a literal number
+  Notice #  50: Line   30, Variable assignment to a literal number
+  Notice #  50: Line   42, Variable assignment to a literal number
+  Notice #  17: Line   66, Function comment content less than 10.0%
+  Notice #  46: Line   66, Function/Class Blank Line content less < 10.0%
+  Notice #  50: Line   73, Variable assignment to a literal number
+  Notice #  17: Line   82, Function comment content less than 10.0%
+  Notice #  46: Line   82, Function/Class Blank Line content less < 10.0%
+  Notice #  49: Line   82, Function appears to have null or blank parameters
+  Notice #  46: Line   83, Function/Class Blank Line content less < 10.0%
+  Notice #  51: Line   92, No comment preceding a function block
+
+  Wed May 28 21:47:40 2014
+  CPEntry.java
+  Notice #  46: Line   45, Function/Class Blank Line content less < 10.0%
+  Notice #  28: Line   45, Cyclomatic complexity > 10
+  Notice #  48: Line   52, Function lLOC <= 0, non-operational function
+  Notice #  49: Line   67, Function appears to have null or blank parameters
+  Notice #  51: Line   77, No comment preceding a function block
+  Notice #  17: Line   82, Function comment content less than 10.0%
+  Notice #  46: Line   82, Function/Class Blank Line content less < 10.0%
+  Notice #  51: Line   84, No comment preceding a function block
+  Notice #  49: Line   84, Function appears to have null or blank parameters
+  Notice #  51: Line   85, No comment preceding a function block
+  Notice #  49: Line   85, Function appears to have null or blank parameters
+  Notice #  51: Line   87, No comment preceding a function block
+  Notice #  49: Line   90, Function appears to have null or blank parameters
+  Notice #  31: Line   91, Class/Struct comments are < 10.0%
+  Notice #  51: Line  100, No comment preceding a function block
+  Notice #  51: Line  104, No comment preceding a function block
+  Notice #  49: Line  104, Function appears to have null or blank parameters
+  Notice #  51: Line  105, No comment preceding a function block
+  Notice #  49: Line  105, Function appears to have null or blank parameters
+  Notice #  51: Line  106, No comment preceding a function block
+  Notice #  49: Line  106, Function appears to have null or blank parameters
+  Notice #  51: Line  116, No comment preceding a function block
+  Notice #  51: Line  120, No comment preceding a function block
+  Notice #  49: Line  120, Function appears to have null or blank parameters
+  Notice #  51: Line  121, No comment preceding a function block
+  Notice #  49: Line  121, Function appears to have null or blank parameters
+  Notice #  51: Line  122, No comment preceding a function block
+  Notice #  49: Line  122, Function appears to have null or blank parameters
+  Notice #  51: Line  136, No comment preceding a function block
+  Notice #  51: Line  140, No comment preceding a function block
+  Notice #  49: Line  140, Function appears to have null or blank parameters
+  Notice #  51: Line  141, No comment preceding a function block
+  Notice #  49: Line  141, Function appears to have null or blank parameters
+  Notice #  51: Line  142, No comment preceding a function block
+  Notice #  49: Line  142, Function appears to have null or blank parameters
+  Notice #  51: Line  144, No comment preceding a function block
+  Notice #  49: Line  144, Function appears to have null or blank parameters
+  Notice #  51: Line  158, No comment preceding a function block
+  Notice #  51: Line  162, No comment preceding a function block
+  Notice #  49: Line  162, Function appears to have null or blank parameters
+  Notice #  51: Line  163, No comment preceding a function block
+  Notice #  49: Line  163, Function appears to have null or blank parameters
+  Notice #  51: Line  164, No comment preceding a function block
+  Notice #  49: Line  164, Function appears to have null or blank parameters
+  Notice #  51: Line  166, No comment preceding a function block
+  Notice #  49: Line  166, Function appears to have null or blank parameters
+  Notice #  51: Line  180, No comment preceding a function block
+  Notice #  51: Line  186, No comment preceding a function block
+  Notice #  51: Line  190, No comment preceding a function block
+  Notice #  49: Line  190, Function appears to have null or blank parameters
+  Notice #  51: Line  191, No comment preceding a function block
+  Notice #  49: Line  191, Function appears to have null or blank parameters
+  Notice #  51: Line  193, No comment preceding a function block
+  Notice #  49: Line  193, Function appears to have null or blank parameters
+  Notice #  51: Line  195, No comment preceding a function block
+  Notice #  49: Line  197, Function appears to have null or blank parameters
+  Notice #  51: Line  212, No comment preceding a function block
+  Notice #  51: Line  218, No comment preceding a function block
+  Notice #  51: Line  222, No comment preceding a function block
+  Notice #  49: Line  222, Function appears to have null or blank parameters
+  Notice #  51: Line  223, No comment preceding a function block
+  Notice #  49: Line  223, Function appears to have null or blank parameters
+  Notice #  51: Line  225, No comment preceding a function block
+  Notice #  49: Line  225, Function appears to have null or blank parameters
+  Notice #  51: Line  227, No comment preceding a function block
+  Notice #  49: Line  229, Function appears to have null or blank parameters
+  Notice #  51: Line  247, No comment preceding a function block
+  Notice #  51: Line  254, No comment preceding a function block
+  Notice #  51: Line  260, No comment preceding a function block
+  Notice #  49: Line  260, Function appears to have null or blank parameters
+  Notice #  51: Line  261, No comment preceding a function block
+  Notice #  49: Line  261, Function appears to have null or blank parameters
+  Notice #  51: Line  263, No comment preceding a function block
+  Notice #  49: Line  263, Function appears to have null or blank parameters
+  Notice #  51: Line  264, No comment preceding a function block
+  Notice #  49: Line  264, Function appears to have null or blank parameters
+  Notice #  51: Line  265, No comment preceding a function block
+  Notice #  49: Line  265, Function appears to have null or blank parameters
+  Notice #  51: Line  268, No comment preceding a function block
+  Notice #  49: Line  271, Function appears to have null or blank parameters
+  Notice #  51: Line  278, No comment preceding a function block
+  Notice #  51: Line  282, No comment preceding a function block
+  Notice #  49: Line  282, Function appears to have null or blank parameters
+  Notice #  51: Line  289, No comment preceding a function block
+  Notice #  51: Line  293, No comment preceding a function block
+  Notice #  49: Line  293, Function appears to have null or blank parameters
+  Notice #  51: Line  300, No comment preceding a function block
+  Notice #  51: Line  304, No comment preceding a function block
+  Notice #  49: Line  304, Function appears to have null or blank parameters
+  Notice #  51: Line  322, No comment preceding a function block
+  Notice #  51: Line  329, No comment preceding a function block
+  Notice #  51: Line  334, No comment preceding a function block
+  Notice #  49: Line  334, Function appears to have null or blank parameters
+  Notice #  51: Line  335, No comment preceding a function block
+  Notice #  49: Line  335, Function appears to have null or blank parameters
+  Notice #  51: Line  337, No comment preceding a function block
+  Notice #  49: Line  337, Function appears to have null or blank parameters
+  Notice #  51: Line  338, No comment preceding a function block
+  Notice #  49: Line  338, Function appears to have null or blank parameters
+  Notice #  51: Line  340, No comment preceding a function block
+  Notice #  49: Line  340, Function appears to have null or blank parameters
+  Notice #  51: Line  342, No comment preceding a function block
+  Notice #  49: Line  345, Function appears to have null or blank parameters
+  Notice #  51: Line  359, No comment preceding a function block
+  Notice #  51: Line  366, No comment preceding a function block
+  Notice #  51: Line  370, No comment preceding a function block
+  Notice #  49: Line  370, Function appears to have null or blank parameters
+  Notice #  51: Line  371, No comment preceding a function block
+  Notice #  49: Line  371, Function appears to have null or blank parameters
+  Notice #  51: Line  372, No comment preceding a function block
+  Notice #  49: Line  372, Function appears to have null or blank parameters
+  Notice #  51: Line  374, No comment preceding a function block
+  Notice #  49: Line  374, Function appears to have null or blank parameters
+  Notice #  51: Line  376, No comment preceding a function block
+  Notice #  49: Line  379, Function appears to have null or blank parameters
+  Notice #  51: Line  392, No comment preceding a function block
+  Notice #  51: Line  398, No comment preceding a function block
+  Notice #  51: Line  402, No comment preceding a function block
+  Notice #  49: Line  402, Function appears to have null or blank parameters
+  Notice #  51: Line  403, No comment preceding a function block
+  Notice #  49: Line  403, Function appears to have null or blank parameters
+  Notice #  51: Line  405, No comment preceding a function block
+  Notice #  49: Line  405, Function appears to have null or blank parameters
+  Notice #  51: Line  407, No comment preceding a function block
+  Notice #  49: Line  409, Function appears to have null or blank parameters
+  Notice #  51: Line  426, No comment preceding a function block
+  Notice #  51: Line  433, No comment preceding a function block
+  Notice #  51: Line  438, No comment preceding a function block
+  Notice #  49: Line  438, Function appears to have null or blank parameters
+  Notice #  51: Line  439, No comment preceding a function block
+  Notice #  49: Line  439, Function appears to have null or blank parameters
+  Notice #  51: Line  440, No comment preceding a function block
+  Notice #  49: Line  440, Function appears to have null or blank parameters
+  Notice #  51: Line  441, No comment preceding a function block
+  Notice #  49: Line  441, Function appears to have null or blank parameters
+  Notice #  51: Line  443, No comment preceding a function block
+  Notice #  49: Line  443, Function appears to have null or blank parameters
+  Notice #  51: Line  445, No comment preceding a function block
+  Notice #  49: Line  449, Function appears to have null or blank parameters
+  Notice #  51: Line  459, No comment preceding a function block
+
+  Thu May 29 06:12:57 2014
+  Field.java
+  Notice #  30: Line    6, TAB character has been identified
+  Notice #  30: Line    7, TAB character has been identified
+  Notice #  30: Line    8, TAB character has been identified
+  Notice #  30: Line    9, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  51: Line   14, No comment preceding a function block
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  17: Line   19, Function comment content less than 10.0%
+  Notice #  46: Line   19, Function/Class Blank Line content less < 10.0%
+  Notice #  31: Line   20, Class/Struct comments are < 10.0%
+  Notice #  46: Line   20, Function/Class Blank Line content less < 10.0%
+  Notice #  20: Line   20, File comment content < 10.0%
+
+  Thu May 29 06:13:35 2014
+  FieldSet.java
+  Notice #  52: Line    4, No comment preceding a class block
+  Notice #  30: Line    5, TAB character has been identified
+  Notice #  30: Line    6, TAB character has been identified
+  Notice #  30: Line    7, TAB character has been identified
+  Notice #  30: Line    9, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  51: Line   12, No comment preceding a function block
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  50: Line   15, Variable assignment to a literal number
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  17: Line   19, Function comment content less than 10.0%
+  Notice #  46: Line   19, Function/Class Blank Line content less < 10.0%
+  Notice #  31: Line   20, Class/Struct comments are < 10.0%
+  Notice #  46: Line   20, Function/Class Blank Line content less < 10.0%
+  Notice #  20: Line   20, File comment content < 10.0%
+
+  Wed May 28 21:47:40 2014
+  Instruction.java
+  Notice #  46: Line   35, Function/Class Blank Line content less < 10.0%
+  Notice #  49: Line   43, Function appears to have null or blank parameters
+  Notice #  49: Line   52, Function appears to have null or blank parameters
+  Notice #  49: Line   58, Function appears to have null or blank parameters
+  Notice #  49: Line   67, Function appears to have null or blank parameters
+  Notice #  46: Line   80, Function/Class Blank Line content less < 10.0%
+  Notice #  49: Line   80, Function appears to have null or blank parameters
+  Notice #  50: Line   89, Variable assignment to a literal number
+  Notice #  46: Line   98, Function/Class Blank Line content less < 10.0%
+  Notice #  49: Line   98, Function appears to have null or blank parameters
+  Notice #  51: Line  106, No comment preceding a function block
+  Notice #  51: Line  111, No comment preceding a function block
+
+  Thu May 29 06:13:50 2014
+  InterfaceSet.java
+  Notice #  52: Line    6, No comment preceding a class block
+  Notice #  30: Line    7, TAB character has been identified
+  Notice #  30: Line    8, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  51: Line   11, No comment preceding a function block
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  50: Line   14, Variable assignment to a literal number
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  17: Line   18, Function comment content less than 10.0%
+  Notice #  46: Line   18, Function/Class Blank Line content less < 10.0%
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  51: Line   21, No comment preceding a function block
+  Notice #  30: Line   22, TAB character has been identified
+  Notice #  30: Line   22, TAB character has been identified
+  Notice #  30: Line   23, TAB character has been identified
+  Notice #  30: Line   23, TAB character has been identified
+  Notice #  30: Line   23, TAB character has been identified
+  Notice #  30: Line   23, TAB character has been identified
+  Notice #  30: Line   23, TAB character has been identified
+  Notice #  30: Line   24, TAB character has been identified
+  Notice #  30: Line   24, TAB character has been identified
+  Notice #  30: Line   24, TAB character has been identified
+  Notice #  30: Line   24, TAB character has been identified
+  Notice #  30: Line   25, TAB character has been identified
+  Notice #  30: Line   25, TAB character has been identified
+  Notice #  50: Line   25, Variable assignment to a literal number
+  Notice #  30: Line   26, TAB character has been identified
+  Notice #  30: Line   26, TAB character has been identified
+  Notice #  30: Line   27, TAB character has been identified
+  Notice #  30: Line   27, TAB character has been identified
+  Notice #  30: Line   27, TAB character has been identified
+  Notice #  30: Line   28, TAB character has been identified
+  Notice #  30: Line   28, TAB character has been identified
+  Notice #  30: Line   29, TAB character has been identified
+  Notice #  30: Line   29, TAB character has been identified
+  Notice #  30: Line   30, TAB character has been identified
+  Notice #  17: Line   30, Function comment content less than 10.0%
+  Notice #  46: Line   30, Function/Class Blank Line content less < 10.0%
+  Notice #  49: Line   30, Function appears to have null or blank parameters
+  Notice #  31: Line   31, Class/Struct comments are < 10.0%
+  Notice #  46: Line   31, Function/Class Blank Line content less < 10.0%
+  Notice #  20: Line   31, File comment content < 10.0%
+
+  Thu May 29 06:25:27 2014
+  Method.java
+  Notice #  30: Line    8, TAB character has been identified
+  Notice #  30: Line    9, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #   1: Line   14, Physical line length > 80 characters
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  51: Line   17, No comment preceding a function block
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   22, TAB character has been identified
+  Notice #  30: Line   22, TAB character has been identified
+  Notice #  30: Line   23, TAB character has been identified
+  Notice #  17: Line   23, Function comment content less than 10.0%
+  Notice #  46: Line   23, Function/Class Blank Line content less < 10.0%
+  Notice #  30: Line   25, TAB character has been identified
+  Notice #  30: Line   26, TAB character has been identified
+  Notice #  30: Line   27, TAB character has been identified
+  Notice #  30: Line   28, TAB character has been identified
+  Notice #  30: Line   29, TAB character has been identified
+  Notice #  30: Line   29, TAB character has been identified
+  Notice #  30: Line   30, TAB character has been identified
+  Notice #  30: Line   30, TAB character has been identified
+  Notice #  30: Line   31, TAB character has been identified
+  Notice #  30: Line   31, TAB character has been identified
+  Notice #  30: Line   32, TAB character has been identified
+  Notice #  30: Line   32, TAB character has been identified
+  Notice #  30: Line   33, TAB character has been identified
+  Notice #  30: Line   33, TAB character has been identified
+  Notice #  50: Line   33, Variable assignment to a literal number
+  Notice #  30: Line   34, TAB character has been identified
+  Notice #  30: Line   34, TAB character has been identified
+  Notice #  30: Line   35, TAB character has been identified
+  Notice #  30: Line   35, TAB character has been identified
+  Notice #  30: Line   35, TAB character has been identified
+  Notice #  30: Line   36, TAB character has been identified
+  Notice #  30: Line   36, TAB character has been identified
+  Notice #  30: Line   36, TAB character has been identified
+  Notice #  30: Line   37, TAB character has been identified
+  Notice #  30: Line   37, TAB character has been identified
+  Notice #  30: Line   37, TAB character has been identified
+  Notice #  30: Line   38, TAB character has been identified
+  Notice #  30: Line   38, TAB character has been identified
+  Notice #  30: Line   38, TAB character has been identified
+  Notice #  30: Line   38, TAB character has been identified
+  Notice #  30: Line   39, TAB character has been identified
+  Notice #  30: Line   39, TAB character has been identified
+  Notice #  30: Line   39, TAB character has been identified
+  Notice #  30: Line   39, TAB character has been identified
+  Notice #  30: Line   40, TAB character has been identified
+  Notice #  30: Line   40, TAB character has been identified
+  Notice #  30: Line   40, TAB character has been identified
+  Notice #  30: Line   40, TAB character has been identified
+  Notice #  30: Line   41, TAB character has been identified
+  Notice #  30: Line   41, TAB character has been identified
+  Notice #  30: Line   41, TAB character has been identified
+  Notice #  30: Line   41, TAB character has been identified
+  Notice #  30: Line   41, TAB character has been identified
+  Notice #  30: Line   42, TAB character has been identified
+  Notice #  30: Line   42, TAB character has been identified
+  Notice #  30: Line   42, TAB character has been identified
+  Notice #  30: Line   42, TAB character has been identified
+  Notice #  30: Line   42, TAB character has been identified
+  Notice #  30: Line   43, TAB character has been identified
+  Notice #  30: Line   43, TAB character has been identified
+  Notice #  30: Line   43, TAB character has been identified
+  Notice #  30: Line   43, TAB character has been identified
+  Notice #  30: Line   43, TAB character has been identified
+  Notice #  30: Line   44, TAB character has been identified
+  Notice #  30: Line   44, TAB character has been identified
+  Notice #  30: Line   44, TAB character has been identified
+  Notice #  30: Line   44, TAB character has been identified
+  Notice #  30: Line   44, TAB character has been identified
+  Notice #  30: Line   44, TAB character has been identified
+  Notice #  22: Line   43, 'if' is not bound with scope braces {}
+  Notice #  30: Line   45, TAB character has been identified
+  Notice #  30: Line   45, TAB character has been identified
+  Notice #  30: Line   45, TAB character has been identified
+  Notice #  30: Line   45, TAB character has been identified
+  Notice #  30: Line   46, TAB character has been identified
+  Notice #  30: Line   46, TAB character has been identified
+  Notice #  30: Line   46, TAB character has been identified
+  Notice #  30: Line   46, TAB character has been identified
+  Notice #  30: Line   47, TAB character has been identified
+  Notice #  30: Line   47, TAB character has been identified
+  Notice #  30: Line   47, TAB character has been identified
+  Notice #  30: Line   48, TAB character has been identified
+  Notice #  30: Line   48, TAB character has been identified
+  Notice #  30: Line   48, TAB character has been identified
+  Notice #  30: Line   49, TAB character has been identified
+  Notice #  30: Line   49, TAB character has been identified
+  Notice #  30: Line   49, TAB character has been identified
+  Notice #  30: Line   50, TAB character has been identified
+  Notice #  30: Line   50, TAB character has been identified
+  Notice #  30: Line   50, TAB character has been identified
+  Notice #  30: Line   51, TAB character has been identified
+  Notice #  30: Line   51, TAB character has been identified
+  Notice #  30: Line   51, TAB character has been identified
+  Notice #  30: Line   51, TAB character has been identified
+  Notice #  30: Line   52, TAB character has been identified
+  Notice #  30: Line   52, TAB character has been identified
+  Notice #  30: Line   52, TAB character has been identified
+  Notice #  30: Line   52, TAB character has been identified
+  Notice #  30: Line   52, TAB character has been identified
+  Notice #  30: Line   53, TAB character has been identified
+  Notice #  30: Line   53, TAB character has been identified
+  Notice #  30: Line   53, TAB character has been identified
+  Notice #  30: Line   53, TAB character has been identified
+  Notice #  30: Line   53, TAB character has been identified
+  Notice #  30: Line   54, TAB character has been identified
+  Notice #  30: Line   54, TAB character has been identified
+  Notice #  30: Line   54, TAB character has been identified
+  Notice #  30: Line   54, TAB character has been identified
+  Notice #  30: Line   55, TAB character has been identified
+  Notice #  30: Line   55, TAB character has been identified
+  Notice #  30: Line   55, TAB character has been identified
+  Notice #  30: Line   55, TAB character has been identified
+  Notice #  30: Line   55, TAB character has been identified
+  Notice #  30: Line   56, TAB character has been identified
+  Notice #  30: Line   56, TAB character has been identified
+  Notice #  30: Line   56, TAB character has been identified
+  Notice #  30: Line   56, TAB character has been identified
+  Notice #  30: Line   56, TAB character has been identified
+  Notice #  30: Line   57, TAB character has been identified
+  Notice #  30: Line   57, TAB character has been identified
+  Notice #  30: Line   57, TAB character has been identified
+  Notice #  30: Line   57, TAB character has been identified
+  Notice #  30: Line   58, TAB character has been identified
+  Notice #  30: Line   58, TAB character has been identified
+  Notice #  30: Line   58, TAB character has been identified
+  Notice #  30: Line   58, TAB character has been identified
+  Notice #  30: Line   58, TAB character has been identified
+  Notice #  30: Line   59, TAB character has been identified
+  Notice #  30: Line   59, TAB character has been identified
+  Notice #  30: Line   59, TAB character has been identified
+  Notice #  30: Line   59, TAB character has been identified
+  Notice #  30: Line   59, TAB character has been identified
+  Notice #  30: Line   60, TAB character has been identified
+  Notice #  30: Line   60, TAB character has been identified
+  Notice #  30: Line   60, TAB character has been identified
+  Notice #  30: Line   60, TAB character has been identified
+  Notice #  30: Line   61, TAB character has been identified
+  Notice #  30: Line   61, TAB character has been identified
+  Notice #  30: Line   61, TAB character has been identified
+  Notice #  30: Line   61, TAB character has been identified
+  Notice #  30: Line   61, TAB character has been identified
+  Notice #  30: Line   62, TAB character has been identified
+  Notice #  30: Line   62, TAB character has been identified
+  Notice #  30: Line   62, TAB character has been identified
+  Notice #  30: Line   62, TAB character has been identified
+  Notice #  30: Line   62, TAB character has been identified
+  Notice #  30: Line   63, TAB character has been identified
+  Notice #  30: Line   63, TAB character has been identified
+  Notice #  30: Line   63, TAB character has been identified
+  Notice #  30: Line   63, TAB character has been identified
+  Notice #  30: Line   64, TAB character has been identified
+  Notice #  30: Line   64, TAB character has been identified
+  Notice #  30: Line   64, TAB character has been identified
+  Notice #  30: Line   64, TAB character has been identified
+  Notice #  30: Line   64, TAB character has been identified
+  Notice #  30: Line   65, TAB character has been identified
+  Notice #  30: Line   65, TAB character has been identified
+  Notice #  30: Line   65, TAB character has been identified
+  Notice #  30: Line   65, TAB character has been identified
+  Notice #  30: Line   65, TAB character has been identified
+  Notice #  30: Line   66, TAB character has been identified
+  Notice #  30: Line   66, TAB character has been identified
+  Notice #  30: Line   66, TAB character has been identified
+  Notice #  30: Line   66, TAB character has been identified
+  Notice #  30: Line   67, TAB character has been identified
+  Notice #  30: Line   67, TAB character has been identified
+  Notice #  30: Line   67, TAB character has been identified
+  Notice #  30: Line   67, TAB character has been identified
+  Notice #  30: Line   67, TAB character has been identified
+  Notice #  30: Line   68, TAB character has been identified
+  Notice #  30: Line   68, TAB character has been identified
+  Notice #  30: Line   68, TAB character has been identified
+  Notice #  30: Line   68, TAB character has been identified
+  Notice #  30: Line   68, TAB character has been identified
+  Notice #  30: Line   69, TAB character has been identified
+  Notice #  30: Line   69, TAB character has been identified
+  Notice #  30: Line   69, TAB character has been identified
+  Notice #  30: Line   69, TAB character has been identified
+  Notice #  30: Line   70, TAB character has been identified
+  Notice #  30: Line   70, TAB character has been identified
+  Notice #  30: Line   70, TAB character has been identified
+  Notice #  30: Line   70, TAB character has been identified
+  Notice #  30: Line   70, TAB character has been identified
+  Notice #  30: Line   71, TAB character has been identified
+  Notice #  30: Line   71, TAB character has been identified
+  Notice #  30: Line   71, TAB character has been identified
+  Notice #  30: Line   71, TAB character has been identified
+  Notice #  30: Line   71, TAB character has been identified
+  Notice #  30: Line   72, TAB character has been identified
+  Notice #  30: Line   72, TAB character has been identified
+  Notice #  30: Line   72, TAB character has been identified
+  Notice #  30: Line   72, TAB character has been identified
+  Notice #  30: Line   73, TAB character has been identified
+  Notice #  30: Line   73, TAB character has been identified
+  Notice #  30: Line   73, TAB character has been identified
+  Notice #  30: Line   73, TAB character has been identified
+  Notice #  30: Line   73, TAB character has been identified
+  Notice #  30: Line   74, TAB character has been identified
+  Notice #  30: Line   74, TAB character has been identified
+  Notice #  30: Line   74, TAB character has been identified
+  Notice #  30: Line   74, TAB character has been identified
+  Notice #  30: Line   74, TAB character has been identified
+  Notice #  30: Line   75, TAB character has been identified
+  Notice #  30: Line   75, TAB character has been identified
+  Notice #  30: Line   75, TAB character has been identified
+  Notice #  30: Line   75, TAB character has been identified
+  Notice #  30: Line   76, TAB character has been identified
+  Notice #  30: Line   76, TAB character has been identified
+  Notice #  30: Line   76, TAB character has been identified
+  Notice #  30: Line   76, TAB character has been identified
+  Notice #  30: Line   76, TAB character has been identified
+  Notice #  30: Line   77, TAB character has been identified
+  Notice #  30: Line   77, TAB character has been identified
+  Notice #  30: Line   77, TAB character has been identified
+  Notice #  30: Line   77, TAB character has been identified
+  Notice #  30: Line   77, TAB character has been identified
+  Notice #  30: Line   77, TAB character has been identified
+  Notice #  30: Line   78, TAB character has been identified
+  Notice #  30: Line   78, TAB character has been identified
+  Notice #  30: Line   78, TAB character has been identified
+  Notice #  30: Line   79, TAB character has been identified
+  Notice #  30: Line   79, TAB character has been identified
+  Notice #  30: Line   79, TAB character has been identified
+  Notice #  30: Line   80, TAB character has been identified
+  Notice #  30: Line   80, TAB character has been identified
+  Notice #  30: Line   80, TAB character has been identified
+  Notice #  30: Line   81, TAB character has been identified
+  Notice #  30: Line   81, TAB character has been identified
+  Notice #  30: Line   82, TAB character has been identified
+  Notice #  30: Line   82, TAB character has been identified
+  Notice #  30: Line   83, TAB character has been identified
+  Notice #  30: Line   83, TAB character has been identified
+  Notice #  30: Line   83, TAB character has been identified
+  Notice #  30: Line   84, TAB character has been identified
+  Notice #  30: Line   84, TAB character has been identified
+  Notice #  30: Line   85, TAB character has been identified
+  Notice #  30: Line   85, TAB character has been identified
+  Notice #  30: Line   86, TAB character has been identified
+  Notice #  30: Line   86, TAB character has been identified
+  Notice #  30: Line   87, TAB character has been identified
+  Notice #  30: Line   87, TAB character has been identified
+  Notice #  30: Line   87, TAB character has been identified
+  Notice #  30: Line   88, TAB character has been identified
+  Notice #  30: Line   88, TAB character has been identified
+  Notice #  30: Line   89, TAB character has been identified
+  Notice #  30: Line   89, TAB character has been identified
+  Notice #  30: Line   90, TAB character has been identified
+  Notice #  13: Line   90, 'switch' statement does not have a 'default'
+  Notice #  17: Line   90, Function comment content less than 10.0%
+  Notice #  46: Line   90, Function/Class Blank Line content less < 10.0%
+  Notice #  28: Line   90, Cyclomatic complexity > 10
+  Notice #  30: Line   92, TAB character has been identified
+  Notice #  51: Line   92, No comment preceding a function block
+  Notice #  49: Line   92, Function appears to have null or blank parameters
+  Notice #  30: Line   93, TAB character has been identified
+  Notice #  51: Line   93, No comment preceding a function block
+  Notice #  49: Line   93, Function appears to have null or blank parameters
+  Notice #  30: Line   94, TAB character has been identified
+  Notice #  51: Line   94, No comment preceding a function block
+  Notice #  49: Line   94, Function appears to have null or blank parameters
+  Notice #  30: Line   95, TAB character has been identified
+  Notice #  51: Line   95, No comment preceding a function block
+  Notice #  49: Line   95, Function appears to have null or blank parameters
+  Notice #  30: Line   96, TAB character has been identified
+  Notice #  51: Line   96, No comment preceding a function block
+  Notice #  49: Line   96, Function appears to have null or blank parameters
+  Notice #  31: Line   97, Class/Struct comments are < 10.0%
+  Notice #  46: Line   97, Function/Class Blank Line content less < 10.0%
+  Notice #  47: Line   97, File Blank Line content < 10.0%
+  Notice #  20: Line   97, File comment content < 10.0%
+
+  Thu May 29 06:26:54 2014
+  MethodSet.java
+  Notice #  52: Line    4, No comment preceding a class block
+  Notice #  30: Line    5, TAB character has been identified
+  Notice #  30: Line    6, TAB character has been identified
+  Notice #  30: Line    7, TAB character has been identified
+  Notice #   1: Line    9, Physical line length > 80 characters
+  Notice #  30: Line    9, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  51: Line   12, No comment preceding a function block
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  50: Line   15, Variable assignment to a literal number
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  17: Line   19, Function comment content less than 10.0%
+  Notice #  46: Line   19, Function/Class Blank Line content less < 10.0%
+  Notice #   1: Line   21, Physical line length > 80 characters
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   22, TAB character has been identified
+  Notice #  30: Line   23, TAB character has been identified
+  Notice #  30: Line   24, TAB character has been identified
+  Notice #  30: Line   24, TAB character has been identified
+  Notice #  50: Line   24, Variable assignment to a literal number
+  Notice #  30: Line   25, TAB character has been identified
+  Notice #  30: Line   25, TAB character has been identified
+  Notice #  30: Line   26, TAB character has been identified
+  Notice #  30: Line   26, TAB character has been identified
+  Notice #  30: Line   26, TAB character has been identified
+  Notice #   1: Line   27, Physical line length > 80 characters
+  Notice #  30: Line   27, TAB character has been identified
+  Notice #  30: Line   27, TAB character has been identified
+  Notice #  30: Line   27, TAB character has been identified
+  Notice #  30: Line   28, TAB character has been identified
+  Notice #  30: Line   28, TAB character has been identified
+  Notice #  30: Line   28, TAB character has been identified
+  Notice #  50: Line   28, Variable assignment to a literal number
+  Notice #   1: Line   29, Physical line length > 80 characters
+  Notice #  30: Line   29, TAB character has been identified
+  Notice #  30: Line   29, TAB character has been identified
+  Notice #  30: Line   29, TAB character has been identified
+  Notice #  30: Line   30, TAB character has been identified
+  Notice #  30: Line   30, TAB character has been identified
+  Notice #  30: Line   31, TAB character has been identified
+  Notice #  46: Line   31, Function/Class Blank Line content less < 10.0%
+  Notice #  30: Line   32, TAB character has been identified
+  Notice #  30: Line   33, TAB character has been identified
+  Notice #  51: Line   33, No comment preceding a function block
+  Notice #  49: Line   33, Function appears to have null or blank parameters
+  Notice #  30: Line   34, TAB character has been identified
+  Notice #  51: Line   34, No comment preceding a function block
+  Notice #  31: Line   35, Class/Struct comments are < 10.0%
+  Notice #  46: Line   35, Function/Class Blank Line content less < 10.0%
+  Notice #  20: Line   35, File comment content < 10.0%
+
+  Wed May 28 21:47:40 2014
+  Opcode.java
+  Notice #  50: Line  203, Variable assignment to a literal number
+  Notice #  46: Line  219, Function/Class Blank Line content less < 10.0%
+  Notice #  27: Line  219, Number of function return points > 1
+  Notice #  51: Line  221, No comment preceding a function block
+  Notice #  50: Line  226, Variable assignment to a literal number
+  Notice #  27: Line  240, Number of function return points > 1
+  Notice #  51: Line  266, No comment preceding a function block
+  Notice #  23: Line  271, '?' ternary operator identified
+  Notice #  46: Line  273, Function/Class Blank Line content less < 10.0%
+  Notice #  51: Line  289, No comment preceding a function block
+  Notice #  46: Line  331, Function/Class Blank Line content less < 10.0%
+  Notice #  49: Line  340, Function appears to have null or blank parameters
+  Notice #  49: Line  346, Function appears to have null or blank parameters
+  Notice #  47: Line  373, File Blank Line content < 10.0%
+
+  Thu May 29 06:14:51 2014
+  OtherAttribute.java
+  Notice #  30: Line    8, TAB character has been identified
+  Notice #  30: Line    9, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  51: Line   11, No comment preceding a function block
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #   1: Line   13, Physical line length > 80 characters
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  17: Line   16, Function comment content less than 10.0%
+  Notice #  46: Line   16, Function/Class Blank Line content less < 10.0%
+
+  Thu May 29 05:03:08 2014
+  Test1.java
+  Notice #  30: Line    5, TAB character has been identified
+  Notice #  30: Line    6, TAB character has been identified
+  Notice #  51: Line    6, No comment preceding a function block
+  Notice #  30: Line    7, TAB character has been identified
+  Notice #  30: Line    7, TAB character has been identified
+  Notice #  30: Line    8, TAB character has been identified
+  Notice #  30: Line    8, TAB character has been identified
+  Notice #  30: Line    9, TAB character has been identified
+  Notice #  30: Line    9, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  49: Line   10, Function appears to have null or blank parameters
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  51: Line   13, No comment preceding a function block
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  49: Line   15, Function appears to have null or blank parameters
+  Notice #  48: Line   15, Function lLOC <= 0, non-operational function
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  51: Line   18, No comment preceding a function block
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  49: Line   20, Function appears to have null or blank parameters
+  Notice #  48: Line   20, Function lLOC <= 0, non-operational function
+
+  Thu May 29 05:03:09 2014
+  Test2.java
+  Notice #  30: Line    5, TAB character has been identified
+  Notice #  30: Line    6, TAB character has been identified
+  Notice #  51: Line    6, No comment preceding a function block
+  Notice #  30: Line    7, TAB character has been identified
+  Notice #  30: Line    7, TAB character has been identified
+  Notice #  30: Line    8, TAB character has been identified
+  Notice #  30: Line    8, TAB character has been identified
+  Notice #  30: Line    9, TAB character has been identified
+  Notice #  49: Line    9, Function appears to have null or blank parameters
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  51: Line   12, No comment preceding a function block
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  49: Line   14, Function appears to have null or blank parameters
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  51: Line   17, No comment preceding a function block
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  49: Line   19, Function appears to have null or blank parameters
+  Notice #  48: Line   19, Function lLOC <= 0, non-operational function
+
+  Thu May 29 05:03:16 2014
+  Test3.java
+  Notice #  30: Line    6, TAB character has been identified
+  Notice #  30: Line    7, TAB character has been identified
+  Notice #  51: Line    7, No comment preceding a function block
+  Notice #  30: Line    8, TAB character has been identified
+  Notice #  30: Line    8, TAB character has been identified
+  Notice #  30: Line    9, TAB character has been identified
+  Notice #  30: Line    9, TAB character has been identified
+  Notice #  30: Line   10, TAB character has been identified
+  Notice #  49: Line   10, Function appears to have null or blank parameters
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  51: Line   13, No comment preceding a function block
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  30: Line   15, TAB character has been identified
+  Notice #  49: Line   15, Function appears to have null or blank parameters
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  51: Line   18, No comment preceding a function block
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  30: Line   20, TAB character has been identified
+  Notice #  49: Line   20, Function appears to have null or blank parameters
+
+  Thu May 29 05:04:59 2014
+  Test4.java
+  Notice #  30: Line    5, TAB character has been identified
+  Notice #  30: Line    6, TAB character has been identified
+  Notice #  51: Line    6, No comment preceding a function block
+  Notice #  30: Line    7, TAB character has been identified
+  Notice #  30: Line    7, TAB character has been identified
+  Notice #  30: Line    8, TAB character has been identified
+  Notice #  30: Line    8, TAB character has been identified
+  Notice #  30: Line    9, TAB character has been identified
+  Notice #  49: Line    9, Function appears to have null or blank parameters
+  Notice #  30: Line   11, TAB character has been identified
+  Notice #  30: Line   12, TAB character has been identified
+  Notice #  51: Line   12, No comment preceding a function block
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   13, TAB character has been identified
+  Notice #  30: Line   14, TAB character has been identified
+  Notice #  49: Line   14, Function appears to have null or blank parameters
+  Notice #  30: Line   16, TAB character has been identified
+  Notice #  30: Line   17, TAB character has been identified
+  Notice #  51: Line   17, No comment preceding a function block
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   18, TAB character has been identified
+  Notice #  30: Line   19, TAB character has been identified
+  Notice #  49: Line   19, Function appears to have null or blank parameters
+  Notice #  30: Line   21, TAB character has been identified
+  Notice #  30: Line   22, TAB character has been identified
+  Notice #  51: Line   22, No comment preceding a function block
+  Notice #  30: Line   23, TAB character has been identified
+  Notice #  30: Line   23, TAB character has been identified
+  Notice #  30: Line   24, TAB character has been identified
+  Notice #  49: Line   24, Function appears to have null or blank parameters
+
+  ------------------------------------------------------------------------
+
+                     ~~ Project Analysis For 20 Files ~~
+
+  ------------------------------------------------------------------------
+
+                        ~~ Project Quality Profile ~~
+
+  Type  Count Percent  Quality Notice
+  ________________________________________________________________________
+
+  1        23    2.11  Physical line length > 80 characters
+  13        1    0.09  'switch' statement does not have a 'default'
+  17       15    1.38  Function comment content less than 10.0%
+  20        5    0.46  File comment content < 10.0%
+  22        1    0.09  if, else, for or while not bound by scope
+  23        1    0.09  '?' ternary operator identified
+  27        3    0.28  Number of function return points > 1
+  28        2    0.18  Cyclomatic complexity > 10
+  30      750   68.81  TAB character has been identified
+  31        6    0.55  Class/Struct comments are < 10.0%
+  36        2    0.18  Class specification contains protected data
+  38        1    0.09  Exception Handling 'try'- 'catch' has been identified
+  46       31    2.84  Function/Class Blank Line content less < 10.0%
+  47        4    0.37  File Blank Line content < 10.0%
+  48        4    0.37  Function lLOC <= 0, non-operational function
+  49       96    8.81  Function appears to have null or blank parameters
+  50       18    1.65  Variable assignment to a literal number
+  51      124   11.38  No comment preceding a function block
+  52        3    0.28  No comment preceding a class block
+  ________________________________________________________________________
+
+         1090  100.00  Total Quality Notices
+
+                        ~~ Quality Notice Density ~~
+
+  Basis: 1000 (K)
+
+  Quality Notices/K LOC   =      919.8 ( 91.98%)
+  Quality Notices/K eLOC  =     1273.4 (127.34%)
+  Quality Notices/K lLOC  =     2460.5 (246.05%)
+
+  ------------------------------------------------------------------------
+
+                             ~~ File Summary ~~
+
+  C Source Files *.c ....:          0  C/C++ Include Files *.h:          0
+  C++ Source Files *.c* .:          0  C++ Include Files *.h* :          0
+  C# Source Files *.cs ..:          0  Java Source File *.jav*:         20
+  Other File Count ......:          0  Total File Count ......:         20
+
+
+          Shareware evaluation licenses process only 20 files.
+          Paid licenses enable processing for an unlimited number of files.
+
+  ________________________________________________________________________
+
+                      Report Banner - Edit rsm.cfg File

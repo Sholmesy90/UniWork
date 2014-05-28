@@ -1,27 +1,29 @@
 import java.io.*;
 
+/// This class is used to represent a method object which can be used to 
+/// determien if the method calls anything, through the AttributeSet 
+/// which will have a section of CodeAttribute if it calls another method
 public class Method
 {
+	private String className;
 	private int accessFlags;
 	private int nameIndex;
 	private int descriptionIndex;
 	private AttributeSet attributes;
 
-	public Method (DataInputStream dis, ConstantPool cp) throws IOException,
+	public Method (DataInputStream dis, ConstantPool cp, String inClass) throws IOException,
 													InvalidConstantPoolIndex,
 													CodeParsingException
 	{
+		className = inClass;
 		accessFlags = dis.readUnsignedShort();
 		nameIndex = dis.readUnsignedShort();
 		descriptionIndex = dis.readUnsignedShort();
 		attributes = new AttributeSet(dis, cp);
 	}
 
-	public String toString()
-	{
-		return String.format("%3s%9s%9s   %15s\n", accessFlags, nameIndex, descriptionIndex, attributes);
-	}
-
+	/// Helper function to resolve the return type of the descriptor type into 
+	/// a string that can be returned and stored.
 	public String resolveType(String s)
 	{
 		String[] data = s.split("\\(");
@@ -42,9 +44,8 @@ public class Method
 						finalString += c;
 				}
 				finalString = finalString.substring(0,finalString.length()-1);
-
 			}
-
+			/// Switches over 
 			switch (c)
 			{
 				case 'B':
@@ -91,5 +92,6 @@ public class Method
 	public int getAccessFlags() { return accessFlags; }
 	public int getNameIndex() { return nameIndex; }
 	public int getDescIndex() { return descriptionIndex; }
+	public String getClassName() { return className; }
 	public AttributeSet getAttributeSet() { return attributes; }
 }

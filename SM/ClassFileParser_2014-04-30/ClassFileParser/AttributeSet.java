@@ -1,10 +1,13 @@
 import java.io.*;
 
+/// AttributeSet stores a set of attributes that can be either
+/// CodeAttribute or OtherAttribute.
 public class AttributeSet
 {
 	private AbstractAttribute[] attributeArray;
 	private int attributeCount;
 
+	/// Passes the dis & cp into the set.
 	public AttributeSet(DataInputStream dis, ConstantPool cp) throws IOException, 
 								  InvalidConstantPoolIndex, CodeParsingException
 	{
@@ -12,6 +15,7 @@ public class AttributeSet
 		attributeArray = new AbstractAttribute[attributeCount];
 		for (int i = 0; i < attributeCount; i++)
 		{
+			/// Tests to determine what type of attribute to store in the array.
 			attributeArray[i] = AbstractAttribute.checkType(dis, cp);
 		}
 	}
@@ -26,6 +30,7 @@ public class AttributeSet
 		return s;
 	}
 
+	/// Getters
 	public int getCount() { return attributeCount; }
 
 	public int getNameAt(int i) { return attributeArray[i].getName(); }

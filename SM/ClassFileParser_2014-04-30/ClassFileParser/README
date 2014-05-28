@@ -1,0 +1,7 @@
+To compile : javac *.java
+
+To Run : java ClassFileParser <className>.class
+
+To Run all test cases : java ClassFileParser TotalTester.class
+
+To Run individual cases : java ClassFileParser Test([1-9]).class
