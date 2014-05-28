@@ -22,12 +22,15 @@ public class PrimeGenerator
 		}
 		while (!confirmedPrime(p2));
 		System.out.println("Prime #2 : " + p2);
+		//p1 = 61;
+		//p2 = 53;
 	}
 
+	/// Confirms within a value of 1/2^10 chance that the number is prime.
 	private boolean confirmedPrime(int random)
 	{
 		boolean isTrue = true;
-		for (int i = 0; i < 5; i ++)
+		for (int i = 0; i < 10; i ++)
 		{
 			int a = 0;
 			while (a % 2 == 0)
@@ -42,6 +45,7 @@ public class PrimeGenerator
 		return isTrue;
 	}
 
+	/// Generates a prime number that is at least 50% sure it is prime.
 	private int generatePrime()
 	{
 		int random = 0;
@@ -63,6 +67,7 @@ public class PrimeGenerator
 		return random;
 	}
 
+	/// Checks if probably prime.
 	private boolean checkPrime(int p, int a)
 	{
 		int exponent = (p - 1)/2;
@@ -82,6 +87,7 @@ public class PrimeGenerator
 		return  rand.nextInt(max - min) + min;
 	}
 
+	/// Getters.
 	public int getP1() { return p1; }
 	public int getP2() { return p2; }
 }
